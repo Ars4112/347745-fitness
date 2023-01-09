@@ -1,0 +1,179 @@
+.advantage {
+  background: #f8f9fc;
+}
+
+.advantage__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 146px;
+  padding-bottom: 90px;
+
+  @media (max-width: $vp-1199) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  @media (max-width: $vp-767) {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+}
+
+.advantage__item--first-card {
+  grid-area: first-card;
+
+  & .advantage__description-term {
+    background: linear-gradient(127.61deg, #d10a42 0%, #0041ca 45.58%);
+    background-clip: text;
+    // text-fill-color: transparent;
+  }
+}
+
+.advantage__item--second-card {
+  grid-area: second-card;
+
+  & .advantage__description-term {
+    background: linear-gradient(142.51deg, #d10a42 0%, #0041ca 87.33%);
+    background-clip: text;
+    // text-fill-color: transparent;
+  }
+}
+
+.advantage-item--center-card {
+  grid-area: center-card;
+  color: #ffffff;
+  padding: 65px 34px;
+  width: 240px;
+  background: #1c3374;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  @media (max-width: $vp-1199) {
+    justify-self: center;
+    padding: 45px 135px;
+    max-width: 442px;
+    width: 100%;
+    // aspect-ratio: 442/239;
+  }
+
+  @media (max-width: $vp-767) {
+    width: 100%;
+    padding: 50px 74px;
+  }
+}
+
+.advantage__item--third-card {
+  grid-area: third-card;
+
+  & .advantage__description-term {
+    background: linear-gradient(142.51deg, #d10a42 0%, #0041ca 87.33%);
+    background-clip: text;
+    // text-fill-color: transparent;
+  }
+}
+
+.advantage__item--fourth-card {
+  grid-area: fourth-card;
+
+  & .advantage__description-term {
+    background: linear-gradient(142.51deg, #d10a42 0%, #0041ca 87.33%);
+    background-clip: text;
+    // text-fill-color: transparent;
+  }
+}
+
+.advantage__list {
+  list-style: none;
+  margin: 0;
+  margin-top: 55px;
+  padding: 0;
+  display: grid;
+  grid-auto-rows: 110px;
+  grid-template-areas:
+    "first-card center-card second-card"
+    "third-card center-card fourth-card";
+  gap: 60px;
+
+  @media (max-width: $vp-1199) {
+    grid-template-columns: repeat(2, minmax(311px, 400px));
+    grid-auto-rows: 90px;
+    grid-template-areas:
+      "first-card second-card"
+      "center-card center-card"
+      "center-card center-card"
+      "third-card fourth-card";
+    gap: 50px 60px;
+  }
+
+  @media (max-width: $vp-767) {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 239px;
+    grid-template-areas:
+      "first-card"
+      "second-card"
+      "center-card"
+      "third-card"
+      "fourth-card";
+  }
+}
+
+.advantage__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+
+  @media (max-width: $vp-767) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.advantage__description-list {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: $vp-767) {
+    text-align: center;
+  }
+}
+
+.advantage__description-term {
+  @include Roboto_Condensed(700, 71px, 62px);
+
+  @media (max-width: $vp-1199) {
+    @include Roboto_Condensed(700, 58px, 57px);
+  }
+}
+
+.advantage__description-definition {
+  @include Roboto_Condensed(400, 14px, 21px);
+  margin: 0;
+}
+
+.advantage__item-title {
+  @include Roboto_Condensed(700, 22px, 33px);
+  margin: 0;
+
+  @media (max-width: $vp-1199) {
+    @include Roboto_Condensed(700, 20px, 30px);
+  }
+
+  @media (max-width: $vp-767) {
+    text-align: center;
+  }
+}
+
+.advantage__text {
+  @include Roboto_Condensed(300, 16px, 22px);
+  margin: 0;
+  margin-top: 5px;
+
+  @media (max-width: $vp-767) {
+    text-align: center;
+  }
+}

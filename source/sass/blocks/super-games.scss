@@ -5,8 +5,8 @@
   padding: 120px 103px;
 
   @media (max-width: $vp-1199) {
-   padding: 100px 45px;
-   grid-template-columns: minmax(200px, 292px) auto;
+    padding: 100px 45px;
+    grid-template-columns: minmax(200px, 292px) auto;
   }
 
   @media (max-width: $vp-767) {
@@ -16,17 +16,17 @@
 }
 
 .super-games__wrapper {
- display: flex;
- flex-direction: column;
- justify-content: center;
-//  align-items: center;
-padding: 0 79px;
-  background: #ED0233;
-  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  //  align-items: center;
+  padding: 87px 79px;
+  background: #ed0233;
+  color: #ffffff;
 
   @media (max-width: $vp-1199) {
-    padding: 0 45px;
-   }
+    padding: 50px 45px;
+  }
 }
 
 .super-games__info {
@@ -41,13 +41,12 @@ padding: 0 79px;
   // font-size: 82px;
   // line-height: 79px;
   text-align: center;
-letter-spacing: 0.03em;
+  letter-spacing: 0.03em;
 
-
-@media (max-width: $vp-1199) {
-  font-size: 48px;
-line-height: 46px;
- }
+  @media (max-width: $vp-1199) {
+    font-size: 48px;
+    line-height: 46px;
+  }
 }
 
 .super-games__description-wrapper {
@@ -57,7 +56,7 @@ line-height: 46px;
 
   @media (max-width: $vp-1199) {
     gap: 5px;
-   }
+  }
 }
 
 .super-games__description-list {
@@ -69,11 +68,11 @@ line-height: 46px;
 .super-games__description-term {
   margin: 0;
   padding-bottom: 13px;
-  border-bottom: 1px solid #FFFFFF;
+  border-bottom: 1px solid #ffffff;
 
   @media (max-width: $vp-1199) {
-   padding-bottom: 7px;
-   }
+    padding-bottom: 7px;
+  }
 }
 
 .super-games__description-definition {
@@ -85,17 +84,17 @@ line-height: 46px;
 
   @media (max-width: $vp-1199) {
     @include Roboto_Condensed(700, 24px, 36px);
-   }
+  }
 }
 
 .super-games__description-text {
   @include Roboto_Condensed(400, 14px, 21px);
- display: flex;
- flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
- @media (max-width: $vp-1199) {
-  @include Roboto_Condensed(400, 12px, 18px);
- }
+  @media (max-width: $vp-1199) {
+    @include Roboto_Condensed(400, 12px, 18px);
+  }
 }
 
 // .super-games__description-date {
@@ -108,9 +107,8 @@ line-height: 46px;
   margin-top: 30px;
 
   @media (max-width: $vp-1199) {
-
     margin-top: 15px;
-   }
+  }
 }
 
 .super-games__button {
@@ -119,10 +117,11 @@ line-height: 46px;
   @media (max-width: $vp-1199) {
     padding: 16px;
     margin-top: 36px;
-   }
+  }
 }
 
 .super-games__image {
+  height: 100%;
   object-fit: cover;
 
   @media (max-width: $vp-767) {

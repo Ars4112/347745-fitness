@@ -31,7 +31,6 @@
 
 .header__list {
   list-style: none;
-  padding: 0;
   margin: 0;
   display: flex;
   justify-content: space-between;
@@ -49,12 +48,7 @@
 }
 
 .header__logo {
-  // @include Alumni_Sans(36px, 43px);
-  font-family: "Alumni-Sans";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 36px;
-  line-height: 43px;
+  @include Alumni_Sans(36px, 43px);
   letter-spacing: 0.02em;
   color: #ffffff;
 
@@ -68,12 +62,7 @@
 }
 
 .header__phone-link {
-  // @include Alumni_Sans(26px, 31px);
-  font-family: "Alumni-Sans";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 36px;
-  line-height: 43px;
+  @include Alumni_Sans(26px, 31px);
   letter-spacing: 0.03em;
   color: #ffffff;
 
@@ -99,9 +88,9 @@
   }
 
   @media (max-width: $vp-767) {
-   flex-direction: column;
-   justify-content: center;
-   gap: 0;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0;
   }
 }
 
@@ -118,7 +107,6 @@
 
   @media (max-width: $vp-767) {
     @include Alumni_Sans(28px, 34px);
-
   }
 }
 

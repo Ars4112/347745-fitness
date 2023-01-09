@@ -36,6 +36,17 @@
   gap: 46px;
   border-bottom: 2px solid #78787833;
   order: -1;
+
+  @media (max-width: $vp-1199) {
+    gap: 54px;
+  }
+
+  @media (max-width: $vp-767) {
+    justify-content: space-between;
+    width: 100%;
+    max-width: 290px;
+    gap: 20px;
+  }
 }
 
 .subscription__button {
@@ -60,7 +71,6 @@
   grid-template-columns: repeat(3, minmax(200px, 360px));
   gap: 40px;
 
-
   // &:target {
   //   display: grid;
 
@@ -81,7 +91,7 @@
   bottom: -124px;
 
   @media (max-width: $vp-767) {
-   display: none;
+    display: none;
   }
 }
 

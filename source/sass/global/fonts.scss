@@ -9,97 +9,97 @@
 //     url("../fonts/rouble.woff") format("woff");
 // }
 
-// @font-face {
-//   font-style: normal;
-//   font-weight: 700;
-//   font-family: "Alumni-Sans";
-
-//   font-display: swap;
-//   src: url("../fonts/Alumni-Sans-Bold.woff2") format("woff2");
-// }
-
 @font-face {
-  font-family: "Alumni-Sans";
   font-style: normal;
   font-weight: 700;
+  font-family: "Alumni-Sans";
+
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/alumnisans/v12/nwpHtKqkOwdO2aOIwhWudEWpx_zq_Xna-Xd93-hgq1EI7C8.woff2)
-    format("woff2");
-  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+  src: url("../fonts/Alumni-Sans-Bold.woff2") format("woff2");
 }
 
 // @font-face {
-//   font-style: normal;
-//   font-weight: 600;
 //   font-family: "Alumni-Sans";
-
+//   font-style: normal;
+//   font-weight: 700;
 //   font-display: swap;
-//   src: url("../fonts/Alumni-Sans-SemiBold.woff2") format("woff2");
+//   src: url(https://fonts.gstatic.com/s/alumnisans/v12/nwpHtKqkOwdO2aOIwhWudEWpx_zq_Xna-Xd93-hgq1EI7C8.woff2)
+//     format("woff2");
+//   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 // }
 
 @font-face {
-  font-family: "Alumni-Sans";
   font-style: normal;
   font-weight: 600;
+  font-family: "Alumni-Sans";
+
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/alumnisans/v12/nwpHtKqkOwdO2aOIwhWudEWpx_zq_Xna-Xd95uhgq1EI7C8.woff2)
-    format("woff2");
-  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+  src: url("../fonts/Alumni-Sans-SemiBold.woff2") format("woff2");
 }
 
 // @font-face {
+//   font-family: "Alumni-Sans";
 //   font-style: normal;
-//   font-weight: 700;
-//   font-family: "Roboto-Condensed";
-
+//   font-weight: 600;
 //   font-display: swap;
-//   src: url("../fonts/Roboto-Condensed-Bold.woff2") format("woff2");
+//   src: url(https://fonts.gstatic.com/s/alumnisans/v12/nwpHtKqkOwdO2aOIwhWudEWpx_zq_Xna-Xd95uhgq1EI7C8.woff2)
+//     format("woff2");
+//   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 // }
 
 @font-face {
-  font-family: "Roboto-Condensed";
   font-style: normal;
   font-weight: 700;
+  font-family: "Roboto-Condensed";
+
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/robotocondensed/v25/ieVi2ZhZI2eCN5jzbjEETS9weq8-32meGCAYb8td.woff2)
-    format("woff2");
-  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+  src: url("../fonts/Roboto-Condensed-Bold.woff2") format("woff2");
 }
 
 // @font-face {
-//   font-style: normal;
-//   font-weight: 400;
 //   font-family: "Roboto-Condensed";
-
+//   font-style: normal;
+//   font-weight: 700;
 //   font-display: swap;
-//   src: url("../fonts/Roboto-Condensed-Regular.woff2") format("woff2");
+//   src: url(https://fonts.gstatic.com/s/robotocondensed/v25/ieVi2ZhZI2eCN5jzbjEETS9weq8-32meGCAYb8td.woff2)
+//     format("woff2");
+//   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 // }
 
 @font-face {
-  font-family: "Roboto-Condensed";
   font-style: normal;
   font-weight: 400;
+  font-family: "Roboto-Condensed";
+
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/robotocondensed/v25/ieVl2ZhZI2eCN5jzbjEETS9weq8-19a7DRs5.woff2)
-    format("woff2");
-  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+  src: url("../fonts/Roboto-Condensed-Regular.woff2") format("woff2");
 }
 
 // @font-face {
-//   font-style: normal;
-//   font-weight: 300;
 //   font-family: "Roboto-Condensed";
-
+//   font-style: normal;
+//   font-weight: 400;
 //   font-display: swap;
-//   src: url("../fonts/Roboto-Condensed-Light.woff2") format("woff2");
+//   src: url(https://fonts.gstatic.com/s/robotocondensed/v25/ieVl2ZhZI2eCN5jzbjEETS9weq8-19a7DRs5.woff2)
+//     format("woff2");
+//   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 // }
 
 @font-face {
-  font-family: "Roboto-Condensed";
   font-style: normal;
   font-weight: 300;
+  font-family: "Roboto-Condensed";
+
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/robotocondensed/v25/ieVi2ZhZI2eCN5jzbjEETS9weq8-33mZGCAYb8td.woff2)
-    format("woff2");
-  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+  src: url("../fonts/Roboto-Condensed-Light.woff2") format("woff2");
 }
+
+// @font-face {
+//   font-family: "Roboto-Condensed";
+//   font-style: normal;
+//   font-weight: 300;
+//   font-display: swap;
+//   src: url(https://fonts.gstatic.com/s/robotocondensed/v25/ieVi2ZhZI2eCN5jzbjEETS9weq8-33mZGCAYb8td.woff2)
+//     format("woff2");
+//   unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+// }
