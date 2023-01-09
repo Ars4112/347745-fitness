@@ -1,0 +1,15 @@
+@mixin Alumni_Sans($font-size, $line-height) {
+  font-family: "Alumni-Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
+@mixin Roboto_Condensed($font-weight, $font-size, $line-height) {
+  font-family: "Roboto-Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: $font-weight;
+  font-size: $font-size;
+  line-height: $line-height;
+}

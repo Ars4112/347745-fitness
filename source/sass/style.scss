@@ -9,7 +9,7 @@
 // ---------------------------------
 
 @import "variables";
-@import "mixins";
+@import "global/mixins";
 @import "global/fonts";
 @import "global/reboot";
 @import "global/utils";
@@ -18,8 +18,12 @@
 // Blocks
 // ---------------------------------
 
-@import "blocks/btn";
-@import "blocks/modal";
+@import "blocks/footer.scss";
+@import "blocks/gym.scss";
+@import "blocks/header.scss";
+@import "blocks/subscription.scss";
+@import "blocks/price.scss";
+@import "blocks/super-games.scss";
 
 // ---------------------------------
 

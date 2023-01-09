@@ -1,0 +1,131 @@
+.super-games__container {
+  display: grid;
+  grid-template-columns: minmax(300px, 500px) auto;
+  justify-content: center;
+  padding: 120px 103px;
+
+  @media (max-width: $vp-1199) {
+   padding: 100px 45px;
+   grid-template-columns: minmax(200px, 292px) auto;
+  }
+
+  @media (max-width: $vp-767) {
+    padding: 70px 0;
+    grid-template-columns: 1fr;
+  }
+}
+
+.super-games__wrapper {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+//  align-items: center;
+padding: 0 79px;
+  background: #ED0233;
+  color: #FFFFFF;
+
+  @media (max-width: $vp-1199) {
+    padding: 0 45px;
+   }
+}
+
+.super-games__info {
+  display: grid;
+  grid-template-columns: min-content auto;
+  justify-content: space-between;
+  align-items: start;
+  gap: 20px;
+}
+
+.super-games__title {
+  // font-size: 82px;
+  // line-height: 79px;
+  text-align: center;
+letter-spacing: 0.03em;
+
+
+@media (max-width: $vp-1199) {
+  font-size: 48px;
+line-height: 46px;
+ }
+}
+
+.super-games__description-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  @media (max-width: $vp-1199) {
+    gap: 5px;
+   }
+}
+
+.super-games__description-list {
+  display: grid;
+  grid-template-columns: min-content;
+  margin: 0;
+}
+
+.super-games__description-term {
+  margin: 0;
+  padding-bottom: 13px;
+  border-bottom: 1px solid #FFFFFF;
+
+  @media (max-width: $vp-1199) {
+   padding-bottom: 7px;
+   }
+}
+
+.super-games__description-definition {
+  @include Roboto_Condensed(700, 40px, 60px);
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  @media (max-width: $vp-1199) {
+    @include Roboto_Condensed(700, 24px, 36px);
+   }
+}
+
+.super-games__description-text {
+  @include Roboto_Condensed(400, 14px, 21px);
+ display: flex;
+ flex-direction: column;
+
+ @media (max-width: $vp-1199) {
+  @include Roboto_Condensed(400, 12px, 18px);
+ }
+}
+
+// .super-games__description-date {
+//   // @include Roboto_Condensed(700, 40px, 60px);
+
+// }
+
+.super-games__text {
+  margin: 0;
+  margin-top: 30px;
+
+  @media (max-width: $vp-1199) {
+
+    margin-top: 15px;
+   }
+}
+
+.super-games__button {
+  margin-top: 55px;
+
+  @media (max-width: $vp-1199) {
+    padding: 16px;
+    margin-top: 36px;
+   }
+}
+
+.super-games__image {
+  object-fit: cover;
+
+  @media (max-width: $vp-767) {
+    width: 100%;
+  }
+}

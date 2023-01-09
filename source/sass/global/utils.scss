@@ -4,6 +4,14 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
+  color: #102654;
+}
+
+h2 {
+  @include Alumni_Sans(54px, 65px);
+  letter-spacing: 0.03em;
+  margin: 0;
+
 }
 
 .wrapper {
@@ -31,6 +39,16 @@ body {
   text-transform: lowercase !important;
   font-weight: 400 !important;
   /* stylelint-enable */
+}
+
+.button {
+  padding: 28px;
+  text-align: center;
+  background: transparent;
+  color: #102654;
+  border: 4px solid #ffffff;
+  color: #ffffff;
+  cursor: pointer;
 }
 
 .visually-hidden {

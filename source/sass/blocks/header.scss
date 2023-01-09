@@ -1,0 +1,193 @@
+.header {
+  background: conic-gradient(
+    from 130.31deg at 16.03% 39.06%,
+    #b80027 -46.69deg,
+    #003d85 32.24deg,
+    #b80027 313.31deg,
+    #003d85 392.24deg
+  );
+  color: #ffffff;
+
+  @media (max-width: $vp-1199) {
+    background: conic-gradient(
+      from 139.4deg at 20.7% 35.74%,
+      #b80027 -46.69deg,
+      #003d85 32.24deg,
+      #b80027 313.31deg,
+      #003d85 392.24deg
+    );
+  }
+
+  @media (max-width: $vp-767) {
+    background: conic-gradient(
+      from 171.43deg at 35.31% 34.22%,
+      #b80027 -46.69deg,
+      #003d85 32.24deg,
+      #b80027 313.31deg,
+      #003d85 392.24deg
+    );
+  }
+}
+
+.header__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 20px;
+  padding: 30px 0 25px;
+
+  @media (max-width: $vp-1199) {
+    padding-top: 40px;
+  }
+
+  @media (max-width: $vp-767) {
+    padding-top: 20px;
+  }
+}
+
+.header__logo {
+  // @include Alumni_Sans(36px, 43px);
+  font-family: "Alumni-Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 43px;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+
+  @media (max-width: $vp-1199) {
+    @include Alumni_Sans(24px, 29px);
+  }
+
+  @media (max-width: $vp-767) {
+    @include Alumni_Sans(20px, 24px);
+  }
+}
+
+.header__phone-link {
+  // @include Alumni_Sans(26px, 31px);
+  font-family: "Alumni-Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 43px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+
+  @media (max-width: $vp-1199) {
+    @include Alumni_Sans(24px, 29px);
+    letter-spacing: 0.02em;
+  }
+
+  @media (max-width: $vp-767) {
+    @include Alumni_Sans(20px, 24px);
+  }
+}
+
+.header__wrapper {
+  position: relative;
+  top: -50px;
+  display: flex;
+  gap: 64px;
+
+  @media (max-width: $vp-1199) {
+    top: 0;
+    gap: 30px;
+  }
+
+  @media (max-width: $vp-767) {
+   flex-direction: column;
+   justify-content: center;
+   gap: 0;
+  }
+}
+
+.header__sup-text {
+  @include Alumni_Sans(48px, 58px);
+  letter-spacing: 0.03em;
+  padding-right: 50px;
+  margin: 0;
+
+  @media (max-width: $vp-1199) {
+    @include Alumni_Sans(34px, 41px);
+    padding: 0;
+  }
+
+  @media (max-width: $vp-767) {
+    @include Alumni_Sans(28px, 34px);
+
+  }
+}
+
+.header__inner-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 98px 0 40px;
+
+  @media (max-width: $vp-1199) {
+    max-width: 456px;
+    margin: 67px 0 40px;
+  }
+
+  @media (max-width: $vp-767) {
+    max-width: 100%;
+  }
+}
+
+.header__text-wrapper {
+  display: flex;
+  align-items: start;
+  max-width: 424px;
+
+  @media (max-width: $vp-1199) {
+    max-width: 456px;
+  }
+}
+
+.header__sub-text {
+  @include Roboto_Condensed(400, 14px, 21px);
+  margin: 0;
+  margin-top: 85px;
+  text-align: right;
+}
+
+.header__title {
+  @include Alumni_Sans(92px, 110px);
+  margin: 0;
+  margin-bottom: 60px;
+  text-align: right;
+  letter-spacing: 0.05em;
+
+  @media (max-width: $vp-1199) {
+    @include Alumni_Sans(72px, 86px);
+  }
+
+  // @media (max-width: $vp-767) {
+  //   @include Alumni_Sans(28px, 34px);
+  // }
+}
+
+.header__button {
+  width: 230px;
+  margin-top: 30px;
+
+  @media (max-width: $vp-1199) {
+    width: 183px;
+  }
+
+  @media (max-width: $vp-767) {
+    width: 100%;
+  }
+}
+
+.header__image {
+  object-fit: cover;
+
+  @media (max-width: $vp-767) {
+    display: none;
+  }
+}
