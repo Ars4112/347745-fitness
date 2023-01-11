@@ -81,6 +81,7 @@
   }
 
   @media (max-width: $vp-767) {
+    width: 100%;
     grid-template-columns: 1fr;
   }
 }

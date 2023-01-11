@@ -2,13 +2,16 @@
   width: 100%;
   max-width: 1366px;
   margin: 0 auto;
-  padding: 0 103px;
+  padding-left: 103px;
+  padding-right: 103px;
 
   @media (max-width: $vp-1199) {
-    padding: 0 45px;
+    padding-left: 45px;
+    padding-right: 45px;
   }
 
   @media (max-width: $vp-767) {
-    padding: 0 15px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }

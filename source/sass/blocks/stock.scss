@@ -1,0 +1,132 @@
+.stock__container {
+  padding-top: 150px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stock__wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 40px;
+  margin-top: 34px;
+
+  @media (max-width: $vp-1199) {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+
+.stock__banner-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  @media (max-width: $vp-1199) {
+    grid-template-columns: repeat(2, auto);
+  }
+
+  @media (max-width: $vp-767) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.stock__banner-card {
+  background: #ed0233;
+  padding: 45px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: $vp-767) {
+    text-align: center;
+  }
+}
+
+.stock__banner-shelf {
+  @include Roboto_Condensed(700, 28px, 44px);
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.stock__banner-price {
+  @include Roboto_Condensed(700, 70px, 109px);
+  margin: 0;
+}
+
+.stock__banner-text {
+  @include Roboto_Condensed(400, 18px, 25px);
+  margin: 0;
+  margin-bottom: auto;
+}
+
+.stock__image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.stock__card-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 40px;
+
+  @media (max-width: $vp-1199) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  @media (max-width: $vp-767) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.stock__card-item {
+  padding: 35px;
+  border: 7px solid #87ceeb;
+  border-image: linear-gradient(to left top, #00359f, #d10a42);
+  border-image-slice: 1;
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: $vp-1199) {
+    width: 100%;
+  }
+
+  @media (max-width: $vp-767) {
+    text-align: center;
+  }
+}
+
+.stock__card-title {
+  @include Roboto_Condensed(700, 26px, 30px);
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.stock__card-text {
+  @include Roboto_Condensed(400, 16px, 22px);
+  margin: 0;
+  margin-bottom: auto;
+}
+
+.stock__link {
+  border-bottom: 1px solid #1c3374;
+  align-self: start;
+  padding: 5px 0;
+
+  @media (max-width: $vp-767) {
+    align-self: center;
+  }
+}
+
+.stock__link--banner {
+  border-bottom: 1px solid #ffffff;
+  color: #ffffff;
+}
