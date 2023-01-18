@@ -6,6 +6,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 55px;
   padding-top: 146px;
   padding-bottom: 90px;
 
@@ -25,7 +26,7 @@
   & .advantage__description-term {
     background: linear-gradient(127.61deg, #d10a42 0%, #0041ca 45.58%);
     background-clip: text;
-    // text-fill-color: transparent;
+    text-fill-color: transparent;
   }
 }
 
@@ -35,12 +36,32 @@
   & .advantage__description-term {
     background: linear-gradient(142.51deg, #d10a42 0%, #0041ca 87.33%);
     background-clip: text;
-    // text-fill-color: transparent;
+    text-fill-color: transparent;
   }
 }
 
 .advantage-item--center-card {
+  position: relative;
+  z-index: 1;
+  padding: 0 60px;
   grid-area: center-card;
+  background-color: #ffffff;
+
+  @media (max-width: $vp-1199) {
+    justify-self: center;
+    padding: 45px 135px;
+    max-width: 442px;
+    width: 100%;
+    padding: 0;
+  }
+
+  @media (max-width: $vp-767) {
+    max-width: 100%;
+
+  }
+}
+
+.advantage-item__wrapper {
   color: #ffffff;
   padding: 65px 34px;
   width: 240px;
@@ -52,16 +73,7 @@
   text-align: center;
 
   @media (max-width: $vp-1199) {
-    justify-self: center;
-    padding: 45px 135px;
-    max-width: 442px;
     width: 100%;
-    // aspect-ratio: 442/239;
-  }
-
-  @media (max-width: $vp-767) {
-    max-width: 100%;
-    padding: 50px;
   }
 }
 
@@ -71,7 +83,7 @@
   & .advantage__description-term {
     background: linear-gradient(142.51deg, #d10a42 0%, #0041ca 87.33%);
     background-clip: text;
-    // text-fill-color: transparent;
+    text-fill-color: transparent;
   }
 }
 
@@ -81,21 +93,37 @@
   & .advantage__description-term {
     background: linear-gradient(142.51deg, #d10a42 0%, #0041ca 87.33%);
     background-clip: text;
-    // text-fill-color: transparent;
+    text-fill-color: transparent;
   }
 }
 
 .advantage__list {
+  position: relative;
   list-style: none;
   margin: 0;
-  margin-top: 55px;
   padding: 0;
   display: grid;
   grid-auto-rows: auto;
   grid-template-areas:
     "first-card center-card second-card"
     "third-card center-card fourth-card";
-  gap: 60px;
+  row-gap: 60px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+
+    @media (max-width: $vp-1199) {
+      display: none;
+    }
+  }
 
   @media (max-width: $vp-1199) {
     grid-template-columns: repeat(2, minmax(311px, 400px));

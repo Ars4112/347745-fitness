@@ -71,11 +71,6 @@
   grid-template-columns: repeat(3, minmax(200px, 360px));
   gap: 40px;
 
-  // &:target {
-  //   display: grid;
-
-  // }
-
   @media (max-width: $vp-1199) {
     grid-template-columns: 442px;
   }
@@ -104,16 +99,3 @@
 .subscription__price-list--active {
   display: grid;
 }
-
-// .subscription__price-list--one:target
-//   ~ .subscription__period-list
-//   .subscription__button--one,
-// .subscription__price-list--two:target
-//   ~ .subscription__period-list
-//   .subscription__button--two,
-// .subscription__price-list--three:target
-//   ~ .subscription__period-list
-//   .subscription__button--three {
-//   border-bottom: 2px solid #d10a42;
-//   color: #102654;
-// }

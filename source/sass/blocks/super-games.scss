@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: minmax(300px, 500px) auto;
   justify-content: center;
-  padding: 120px 103px;
+  padding: 120px 103px 53px;
 
   @media (max-width: $vp-1199) {
     padding: 100px 45px;
@@ -19,7 +19,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  //  align-items: center;
+  // aspect-ratio: 1/1;
   padding: 87px 79px;
   background: #ed0233;
   color: #ffffff;
@@ -123,6 +123,11 @@
 .super-games__image {
   height: 100%;
   object-fit: cover;
+
+  @media (max-width: $vp-1199) {
+    width: 100%;
+
+  }
 
   @media (max-width: $vp-767) {
     width: 100%;
