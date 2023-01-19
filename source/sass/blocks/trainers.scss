@@ -20,10 +20,6 @@
   width: 100%;
 }
 
-.trainers__wrapper--js {
-  overflow: hidden;
-}
-
 .trainers__list {
   list-style: none;
   margin: 0;
@@ -43,11 +39,6 @@
   @media (max-width: $vp-767) {
     grid-template-columns: 1fr;
   }
-}
-
-.trainers__list--js {
-  display: flex;
-  justify-content: flex-start;
 }
 
 .trainers__item {

@@ -1,4 +1,7 @@
-let viewport = document.documentElement.clientWidth;
+import {Swiper, Swiper as default} from './vendor/swiper';
+
+
+// let viewport = document.documentElement.clientWidth;
 const subscriptionButton = document.querySelectorAll('.subscription__button');
 const subscriptionList = document.querySelectorAll('.subscription__price-list');
 const form = document.querySelector('.free-lesson__form');
@@ -151,70 +154,35 @@ const addScroll = ()=> {
 };
 
 const addSlider = ()=> {
-  let position = 0;
-
-  const slidesToScroll = 1;
-  let slidesToShow = 4;
-
-  if (viewport < 1199) {
-    slidesToShow = 2;
-  }
-
-  if (viewport < 768) {
-    slidesToShow = 1;
-  }
 
   const trainersWrapper = document.querySelector('.trainers__wrapper');
   const list = trainersWrapper.querySelector('.trainers__list');
-  let gap = Number(window.getComputedStyle(list).gap.replace('px', ''));
   const items = list.querySelectorAll('.trainers__item');
   const sliderButton = document.querySelectorAll('.trainers__button');
   const buttonLeft = document.querySelector('.trainers__button--left');
   const buttonRight = document.querySelector('.trainers__button--right');
-  const itemsCount = items.length;
-  const itemWidth = (trainersWrapper.offsetWidth - ((slidesToShow - 1) * gap)) / slidesToShow;
-  const movePosition = slidesToScroll * (itemWidth + gap);
 
-
-  trainersWrapper.classList.add('trainers__wrapper--js');
-  list.classList.add('trainers__list--js');
+  trainersWrapper.classList.add('swiper-container');
+  list.classList.add('swiper-wrapper');
+  items.forEach((element)=> {
+    element.classList.add('swiper-slide');
+  });
   sliderButton.forEach((element)=> {
     element.classList.remove('trainers__button--hidden');
   });
+  buttonLeft.classList.add('swiper-button-prev');
+  buttonRight.classList.add('swiper-button-next');
 
-  items.forEach((element)=> {
-    element.style.minWidth = `${itemWidth}px`;
-  });
+  new Swiper('.trainers__wrapper');
 
-  buttonLeft.addEventListener('click', ()=> {
-    position += movePosition;
-    setPosition();
-    checkButton();
-  });
-
-  buttonRight.addEventListener('click', ()=> {
-    position -= movePosition;
-    setPosition();
-    checkButton();
-  });
-
-  const setPosition = ()=> {
-    list.style.transform = `translateX(${position}px)`;
-  };
-
-  const checkButton = ()=> {
-    buttonLeft.disabled = position === 0;
-    buttonRight.disabled = position <= -(itemsCount - slidesToShow) * itemWidth;
-  };
-
-  checkButton();
 };
 
-const addCarousel = ()=> {
-  const reviewsWrapper = document.querySelector('.reviews__wrapper');
-  const reviewsList = reviewsWrapper.querySelector('.reviews__list');
-  const reviewsItems = reviewsList.querySelectorAll('.reviews__item');
-};
+
+// const addCarousel = ()=> {
+//   const reviewsWrapper = document.querySelector('.reviews__wrapper');
+//   const reviewsList = reviewsWrapper.querySelector('.reviews__list');
+//   const reviewsItems = reviewsList.querySelectorAll('.reviews__item');
+// };
 
 window.addEventListener('DOMContentLoaded', ()=> {
   addTabs();
@@ -222,6 +190,6 @@ window.addEventListener('DOMContentLoaded', ()=> {
   addMask();
   addScroll();
   addSlider();
-  window.addEventListener('resize', addSlider);
-  addCarousel();
+  // window.addEventListener('resize', addSlider);
+  // addCarousel();
 });

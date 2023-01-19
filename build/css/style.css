@@ -1303,7 +1303,7 @@ h2 {
   z-index: 1;
   padding: 0 60px;
   grid-area: center-card;
-  background-color: #ffffff;
+  background-color: #F8F9FC;
 }
 
 .advantage-item__wrapper {
@@ -1715,10 +1715,6 @@ h2 {
   width: 100%;
 }
 
-.trainers__wrapper--js {
-  overflow: hidden;
-}
-
 .trainers__list {
   list-style: none;
   margin: 0;
@@ -1735,15 +1731,6 @@ h2 {
   -webkit-transition: 0.2s;
   -o-transition: 0.2s;
   transition: 0.2s;
-}
-
-.trainers__list--js {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
 }
 
 .trainers__item {
