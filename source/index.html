@@ -7,6 +7,10 @@
     <meta name="description" content="Описание проекта" />
     <title>ProjectName</title>
     <link rel="stylesheet" href="css/style.min.css" />
+    <!-- <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/> -->
   </head>
   <body>
     <div class="wrapper">
@@ -511,7 +515,7 @@
           <div class="trainers__container container">
             <h2 class="trainers__title">Тренеры</h2>
             <div class="trainers__wrapper">
-              <ul class="trainers__list">
+              <ul class="trainers__list trainers__list--display">
                 <li class="trainers__item">
                   <div class="trainers__item-wrapper">
                     <h3 class="trainers__name">Анна Павлова</h3>
@@ -993,28 +997,15 @@
                   <h3 class="trainers__name trainers__name--position">Мария Кетова</h3>
                 </li>
               </ul>
+              <button class="trainers__button trainers__button--hidden trainers__button--left" type="button">
 
+
+              </button>
+                <button class="trainers__button trainers__button--hidden trainers__button--right" type="button">
+
+              </button>
             </div>
-            <button class="trainers__button trainers__button--hidden trainers__button--left" type="button">
-              <svg
-              width="16"
-              height="32"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 18 34" fill="none"
-            >
-              <use href="img/sprite/sprite.svg#arrow-left"></use>
-            </svg>
 
-          </button>
-            <button class="trainers__button trainers__button--hidden trainers__button--right" type="button"><svg
-              width="16"
-              height="32"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 18 34" fill="none"
-            >
-              <use href="img/sprite/sprite.svg#arrow-right"></use>
-            </svg>
-          </button>
           </div>
         </section>
         <section class="advantage">
@@ -1172,7 +1163,7 @@
           <div class="reviews__container container">
             <h2 class="reviews__title">Отзывы</h2>
             <div class="reviews__wrapper">
-              <ul class="reviews__list">
+              <ul class="reviews__list reviews__list--display">
                 <li class="reviews__item">
                   <picture>
                     <source
@@ -1303,26 +1294,29 @@
                   <!-- </div> -->
                 </li>
               </ul>
-            <button class="reviews__button reviews__button--left" type="button">
-              <svg
-              width="16"
-              height="32"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 18 34" fill="none"
-            >
-              <use href="img/sprite/sprite.svg#arrow-left"></use>
-            </svg>
+              <button class="reviews__button reviews__button--left reviews__button--hidden" type="button">
+                <!-- <svg
+                width="16"
+                height="32"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 18 34" fill="none"
+              >
+                <use href="img/sprite/sprite.svg#arrow-left"></use>
+              </svg> -->
 
-          </button>
-            <button class="reviews__button reviews__button--right" type="button"><svg
-              width="16"
-              height="32"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 18 34" fill="none"
-            >
-              <use href="img/sprite/sprite.svg#arrow-right"></use>
-            </svg></button>
+            </button>
+              <button class="reviews__button reviews__button--right reviews__button--hidden" type="button">
+                <!-- <svg
+                width="16"
+                height="32"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 18 34" fill="none"
+              >
+                <use href="img/sprite/sprite.svg#arrow-right"></use>
+              </svg> -->
+            </button>
           </div>
+
           </div>
         </section>
         <section class="feedback">

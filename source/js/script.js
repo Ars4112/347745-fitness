@@ -1,7 +1,9 @@
-import {Swiper, Swiper as default} from './vendor/swiper';
+
+import './vendor/swiper';
+import Swiper, {Navigation, Pagination} from 'swiper';
+// import 'swiper/css/bundle';
 
 
-// let viewport = document.documentElement.clientWidth;
 const subscriptionButton = document.querySelectorAll('.subscription__button');
 const subscriptionList = document.querySelectorAll('.subscription__price-list');
 const form = document.querySelector('.free-lesson__form');
@@ -164,6 +166,7 @@ const addSlider = ()=> {
 
   trainersWrapper.classList.add('swiper-container');
   list.classList.add('swiper-wrapper');
+  list.classList.remove('trainers__list--display');
   items.forEach((element)=> {
     element.classList.add('swiper-slide');
   });
@@ -173,16 +176,73 @@ const addSlider = ()=> {
   buttonLeft.classList.add('swiper-button-prev');
   buttonRight.classList.add('swiper-button-next');
 
-  new Swiper('.trainers__wrapper');
+  const swiper = new Swiper('.trainers__wrapper', {
+    modules: [Navigation, Pagination],
+    navigation: {
+      nextEl: '.trainers__button--right',
+      prevEl: '.trainers__button--left',
+    },
+
+    slidesPerView: 4,
+
+    loop: true,
+
+    spaceBetween: 40,
+
+    breakpoints: {
+      300: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+      },
+      1199: {
+        slidesPerView: 4,
+        spaceBetween: 40,
+      },
+    },
+  });
 
 };
 
 
-// const addCarousel = ()=> {
-//   const reviewsWrapper = document.querySelector('.reviews__wrapper');
-//   const reviewsList = reviewsWrapper.querySelector('.reviews__list');
-//   const reviewsItems = reviewsList.querySelectorAll('.reviews__item');
-// };
+const addCarousel = ()=> {
+  const reviewsWrapper = document.querySelector('.reviews__wrapper');
+  const reviewsList = reviewsWrapper.querySelector('.reviews__list');
+  const reviewsItems = reviewsList.querySelectorAll('.reviews__item');
+  const sliderButton = document.querySelectorAll('.reviews__button');
+  const buttonLeft = reviewsWrapper.querySelector('.reviews__button--left');
+  const buttonRight = reviewsWrapper.querySelector('.reviews__button--right');
+
+  sliderButton.forEach((element)=> {
+    element.classList.remove('reviews__button--hidden');
+  });
+
+  reviewsWrapper.classList.add('swiper-container');
+  reviewsList.classList.add('swiper-wrapper');
+  reviewsList.classList.remove('reviews__list--display');
+  reviewsItems.forEach((element)=> {
+    element.classList.add('swiper-slide');
+  });
+  buttonLeft.classList.add('swiper-button-prev');
+
+  buttonRight.classList.add('swiper-button-next');
+
+  const swiper = new Swiper('.reviews__wrapper', {
+    modules: [Navigation, Pagination],
+    navigation: {
+      nextEl: '.reviews__button--right',
+      prevEl: '.reviews__button--left',
+    },
+
+    slidesPerView: 1,
+
+    spaceBetween: 30,
+
+  });
+
+};
 
 window.addEventListener('DOMContentLoaded', ()=> {
   addTabs();
@@ -190,6 +250,5 @@ window.addEventListener('DOMContentLoaded', ()=> {
   addMask();
   addScroll();
   addSlider();
-  // window.addEventListener('resize', addSlider);
-  // addCarousel();
+  addCarousel();
 });
