@@ -11,13 +11,30 @@
   }
 
   @media (max-width: $vp-767) {
-    padding: 70px 47px;
+    padding: 25px 47px 70px;
   }
 }
 
 .trainers__wrapper {
   margin-top: 48px;
   width: 100%;
+
+  @media (max-width: $vp-1199) {
+    margin-top: 31px;
+  }
+
+  @media (max-width: $vp-767) {
+    margin-top: 41px;
+  }
+}
+
+.trainers__title {
+  align-self: flex-start;
+
+  @media (max-width: $vp-1199) {
+    align-self: center;
+    padding: 0;
+  }
 }
 
 .trainers__list {
@@ -48,7 +65,7 @@
   position: relative;
   background: rgba(16, 38, 84, 0.89);
   color: #ffffff;
-  padding: 46px 0;
+  padding: 49px 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -65,19 +82,24 @@
     display: none;
   }
 
+  &:focus .trainers__name--position {
+    display: none;
+  }
+
   @media (max-width: $vp-1199) {
     aspect-ratio: 268/294;
   }
 
   @media (max-width: $vp-767) {
     aspect-ratio: 226/274;
+    padding: 43px 0;
   }
 }
 
 .trainers__item-wrapper {
   text-align: center;
   max-width: 160px;
-  margin-bottom: 45px;
+  margin-bottom: 30px;
 }
 
 .trainers__name {
@@ -87,7 +109,7 @@
 
 .trainers__name--position {
   position: absolute;
-  bottom: 30px;
+  bottom: 24px;
   left: 50%;
   transform: translateX(-50%);
   width: max-content;
@@ -103,16 +125,35 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  padding-left: 17px;
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 12px;
   max-width: 160px;
   height: auto;
+  max-height: 133px;
   overflow-y: auto;
 }
 
 .trainers__info-item {
   @include Roboto_Condensed(400, 14px, 21px);
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    left: -13px;
+
+    @media (max-width: $vp-767) {
+      top: 7px;
+      left: -16px;
+    }
+  }
 }
 
 .trainers__image {
@@ -131,8 +172,9 @@
   background: transparent;
   cursor: pointer;
   color: #afafaf;
+
   position: absolute;
-  top: 56%;
+  top: 61%;
   transform: translateY(-50%);
   z-index: 1;
 
@@ -143,6 +185,14 @@
   &:active {
     color: #413f3f;
   }
+
+  @media (max-width: $vp-1199) {
+    top: 57%;
+  }
+
+  @media (max-width: $vp-767) {
+    top: 63%;
+  }
 }
 
 .trainers__button--hidden {
@@ -150,9 +200,25 @@
 }
 
 .trainers__button--right {
-  right: 10px;
+  right: 45px;
+  width: 16px;
+  height: 32px;
+
+  @media (max-width: $vp-767) {
+    right: 18px;
+    width: 10px;
+    height: 18px;
+  }
 }
 
 .trainers__button--left {
-  left: 10px;
+  left: 45px;
+  width: 16px;
+  height: 32px;
+
+  @media (max-width: $vp-767) {
+    left: 18px;
+    width: 10px;
+    height: 18px;
+  }
 }

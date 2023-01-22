@@ -1,17 +1,30 @@
 .contacts {
   display: flex;
   flex-direction: column;
-  gap: 43px;
-  padding: 56px 60px 70px;
-  border-top: 1px solid #74819C;
+  gap: 34px;
+  padding: 56px 60px 40px;
+  border-top: 1px solid #74819c;
 
   @media (max-width: $vp-1199) {
-    padding: 70px 133px;
-   }
-
-   @media (max-width: $vp-767) {
-    padding: 70px 15px;
+    padding: 60px 76px 64px;
   }
+
+  @media (max-width: $vp-767) {
+    padding: 61px 15px;
+  }
+}
+
+.contacts__title {
+  padding-left: 59px;
+
+  @media (max-width: $vp-1199) {
+    padding: 0;
+    padding-left: 57px;
+  }
+
+  @media (max-width: $vp-767) {
+    padding: 0;
+   }
 }
 
 .contacts__list {
@@ -19,24 +32,23 @@
   list-style: none;
   padding: 0;
   margin: 0;
-
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
+  column-count: 2;
 
   &::before {
     content: "";
     position: absolute;
     top: 0;
     bottom: 0;
-    right: 50%;
+    right: 47%;
     transform: translateX(-50%);
     width: 1px;
-    background: #74819C;
+    background: #74819c;
   }
 
   @media (max-width: $vp-767) {
-    grid-template-columns: 1fr;
+   display: flex;
+   flex-direction: column;
+   gap: 19px;
 
     &::before {
       content: "";
@@ -48,20 +60,50 @@
 .contacts__item {
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  padding: 0 58px;
+  gap: 6px;
+  padding-left: 60px;
+  margin-bottom: 18px;
+
+  &:nth-child(2) {
+    break-before: avoid;
+
+  }
+
+  &:nth-child(2n) {
+    margin-bottom: 0;
+
+  }
+
+
 
   @media (max-width: $vp-1199) {
-   padding: 0;
+    padding: 0;
+    padding-left: 57px;
+    gap: 3px;
+    margin-bottom: 22px;
+  }
+
+  @media (max-width: $vp-767) {
+    padding: 0;
+    gap: 7px;
+    margin-bottom: 0;
    }
 }
 
 .contacts__item-title {
   @include Roboto_Condensed(700, 16px, 24px);
   margin: 0;
+
+  @media (max-width: $vp-1199) {
+    @include Roboto_Condensed(700, 20px, 30px);
+  }
 }
 
 .contacts__text {
   @include Roboto_Condensed(400, 14px, 21px);
   margin: 0;
+
+  @media (max-width: $vp-1199) {
+    @include Roboto_Condensed(400, 18px, 27px);
+  }
 }

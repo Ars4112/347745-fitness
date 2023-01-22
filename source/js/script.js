@@ -244,6 +244,19 @@ const addCarousel = ()=> {
 
 };
 
+const addVideo = ()=> {
+  const videoButton = document.querySelector('.gym__play-button');
+  const videoOverlay = document.querySelector('.gym__overlay');
+
+  videoButton.addEventListener('click', (evt)=> {
+    evt.preventDefault();
+
+    videoButton.remove();
+    videoOverlay.remove();
+
+  });
+};
+
 window.addEventListener('DOMContentLoaded', ()=> {
   addTabs();
   addValid();
@@ -251,4 +264,5 @@ window.addEventListener('DOMContentLoaded', ()=> {
   addScroll();
   addSlider();
   addCarousel();
+  addVideo();
 });

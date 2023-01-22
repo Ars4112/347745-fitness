@@ -1,5 +1,5 @@
 .price__item {
-  padding: 68px 40px;
+  padding: 58px 40px 60px;
   background: #ffffff;
   aspect-ratio: 360/448;
 
@@ -23,21 +23,28 @@
   }
 
   @media (max-width: $vp-1199) {
-    // aspect-ratio: 442/448;
+    gap: 35px;
+    justify-content: start;
+    aspect-ratio: 442/448;
   }
 
   @media (max-width: $vp-767) {
-    // aspect-ratio: 295/385;
-    padding: 55px 42px;
+    aspect-ratio: 295/385;
+    padding: 38px 35px;
+    gap: 22px;
   }
 }
 
 .price__title {
   @include Roboto_Condensed(700, 26px, 29px);
   margin: 0;
-  // margin-bottom: 22px;
+  margin-bottom: 7px;
   color: #102654;
   text-align: center;
+
+  @media (max-width: $vp-1199) {
+    margin-bottom: 10px;
+  }
 
   @media (max-width: $vp-767) {
     @include Roboto_Condensed(700, 22px, 24px);
@@ -58,6 +65,7 @@
   align-items: center;
   justify-content: center;
   gap: 14px;
+  margin-top: 31px;
 }
 
 .price__number-shadow {
@@ -71,6 +79,7 @@
 
   @media (max-width: $vp-767) {
     @include Roboto_Condensed(700, 80px, 120px);
+    top: -44px;
   }
 }
 
@@ -99,9 +108,11 @@
 
 .price__button {
   width: 206px;
+  padding: 23px;
 
   @media (max-width: $vp-767) {
     width: 100%;
+    margin-top: 10px;
   }
 }
 

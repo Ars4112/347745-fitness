@@ -4,6 +4,27 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (max-width: $vp-1199) {
+    padding-top: 92px;
+  }
+
+  @media (max-width: $vp-767) {
+    padding-top: 65px;
+    padding-bottom: 33px;
+  }
+}
+
+.stock__title {
+
+  @media (max-width: $vp-1199) {
+    padding-right: 10px;
+
+    @media (max-width: $vp-767) {
+      padding-right: 5px;
+    }
+  }
+
 }
 
 .stock__wrapper {
@@ -14,10 +35,10 @@
   margin-top: 34px;
 
   @media (max-width: $vp-1199) {
+    margin-top: 40px;
     grid-template-columns: 1fr;
-    gap: 30px;
+    gap: 28px;
     width: 680px;
-    // aspect-ratio: 680/700;
   }
 
   @media (max-width: $vp-767) {
@@ -43,12 +64,18 @@
 
 .stock__banner-card {
   background: #ed0233;
-  padding: 45px;
+  padding: 32px 45px 41px;
   color: #ffffff;
   display: flex;
   flex-direction: column;
 
+  @media (max-width: $vp-1199) {
+    padding-bottom: 48px;
+  }
+
+
   @media (max-width: $vp-767) {
+    padding-top: 35px;
     text-align: center;
   }
 }
@@ -56,7 +83,7 @@
 .stock__banner-shelf {
   @include Roboto_Condensed(700, 28px, 44px);
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: -26px;
 }
 
 .stock__banner-price {
@@ -68,6 +95,10 @@
   @include Roboto_Condensed(400, 18px, 25px);
   margin: 0;
   margin-bottom: auto;
+
+  @media (max-width: $vp-767) {
+    margin-top: -3px;
+  }
 }
 
 .stock__image {
@@ -94,7 +125,7 @@
 }
 
 .stock__card-item {
-  padding: 35px;
+  padding: 21px 26px;
   border: 7px solid #87ceeb;
   border-image: linear-gradient(to left top, #00359f, #d10a42);
   border-image-slice: 1;
@@ -102,18 +133,24 @@
   flex-direction: column;
 
   @media (max-width: $vp-1199) {
+    padding: 21px 28px 27px;
     width: 100%;
   }
 
   @media (max-width: $vp-767) {
     text-align: center;
+    padding: 32px 28px 38px;
   }
 }
 
 .stock__card-title {
   @include Roboto_Condensed(700, 26px, 30px);
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 6px;
+
+  @media (max-width: $vp-1199) {
+    margin-bottom: 9px;
+  }
 }
 
 .stock__card-text {
@@ -123,16 +160,44 @@
 }
 
 .stock__link {
+  @include Roboto_Condensed(400, 14px, 16px);
+  letter-spacing: 0.05em;
+text-transform: uppercase;
   border-bottom: 1px solid #1c3374;
   align-self: start;
   padding: 5px 0;
 
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+
+  @media (max-width: $vp-1199) {
+    @include Roboto_Condensed(400, 12px, 14px);
+    padding: 0;
+    margin-top: 49px;
+  }
+
+
   @media (max-width: $vp-767) {
     align-self: center;
+    margin-top: 29px;
   }
 }
 
 .stock__link--banner {
   border-bottom: 1px solid #ffffff;
   color: #ffffff;
+
+  @media (max-width: $vp-1199) {
+    @include Roboto_Condensed(400, 14px, 16px);
+
+  }
+
+  // &:hover {
+  //   opacity: 0.5;
+  // }
 }

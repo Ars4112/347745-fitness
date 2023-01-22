@@ -4,18 +4,23 @@
   flex-direction: column;
   align-items: center;
   gap: 37px;
-  max-width: 720px;
-  padding-top: 67px;
+  max-width: 763px;
+  padding-top: 63px;
   padding-bottom: 121px;
 
   @media (max-width: $vp-1199) {
-    padding: 50px 100px 100px;
+    padding: 42px 100px 100px;
     max-width: 100%;
+    gap: 41px;
   }
 
   @media (max-width: $vp-767) {
     padding: 30px 47px 70px;
   }
+}
+
+.reviews__title {
+  padding: 0;
 }
 
 .reviews__wrapper {
@@ -49,7 +54,7 @@
   // align-items: flex-start;
   // justify-content: space-between;
   // gap: 28px;
-  padding: 62px;
+  padding: 56px 60px;
   width: 100%;
 
   background: #1c3374;
@@ -63,10 +68,12 @@
     "avatar text"
     "avatar text"
     "avatar text";
-  gap: 25px;
+  gap: 12px 24px;
 
   @media (max-width: $vp-1199) {
+    padding: 56px 65px;
     width: 100%;
+    gap: 12px 29px;
   }
 
   @media (max-width: $vp-767) {
@@ -77,9 +84,9 @@
       "text text";
 
     width: 100%;
-    padding: 40px 25px;
+    padding: 40px 25px 30px;
     justify-content: center;
-    gap: 20px 15px;
+    gap: 12px 29px;
   }
 }
 
@@ -97,6 +104,8 @@
 
   @media (max-width: $vp-767) {
     align-self: end;
+    padding-bottom: 8px;
+    line-height: 27px;
   }
 }
 
@@ -105,18 +114,24 @@
   margin: 0;
   grid-area: text;
 
+  overflow: auto;
+
   @media (max-width: $vp-767) {
+    max-height: 185px;
     text-align: center;
+    line-height: 23px;
   }
 }
 
 .reviews__image {
   object-fit: cover;
   grid-area: avatar;
+  margin-top: 6px;
 
-  // @media (max-width: $vp-767) {
-
-  // }
+  @media (max-width: $vp-767) {
+    margin-left: 17px;
+    margin-top: 3px;
+  }
 }
 
 .reviews__button {
@@ -124,22 +139,46 @@
   background: transparent;
   cursor: pointer;
   color: #afafaf;
-  // position: absolute;
-  // top: 56%;
-  // transform: translateY(-50%);
+  width: 16px;
+  height: 32px;
+  position: absolute;
+  top: 58%;
+  transform: translateY(-50%);
   z-index: 1;
+
+  &:hover {
+    color: #757474;
+  }
+
+  &:active {
+    color: #413f3f;
+  }
 }
 
 .reviews__button--hidden {
   display: none;
 }
 
-// .reviews__button--left {
+.reviews__button--left {
+  left: 41px;
 
-//   left: 0;
-// }
+  @media (max-width: $vp-1199) {
+    left: 45px;
+  }
 
-// .reviews__button--right {
+  @media (max-width: $vp-767) {
+   left: 19px;
+  }
+}
 
-//   right: 0;
-// }
+.reviews__button--right {
+  right: 41px;
+
+  @media (max-width: $vp-1199) {
+    right: 45px;
+  }
+
+  @media (max-width: $vp-767) {
+    right: 19px;
+   }
+}

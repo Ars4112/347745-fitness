@@ -1,24 +1,30 @@
 .free-lesson {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 21px;
   background: #102654;
   color: #ffffff;
-  padding: 56px 170px 70px 103px;
+  padding: 65px 170px 40px 103px;
 
   @media (max-width: $vp-1199) {
-   padding: 70px 133px;
+    padding: 63px 162px 41px 133px;
+    gap: 31px;
   }
 
   @media (max-width: $vp-767) {
-    padding: 70px 15px;
+    padding: 65px 15px 32px;
+    gap: 33px;
   }
 }
 
 .free-lesson form {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 28px;
+
+  @media (max-width: $vp-767) {
+    gap: 38px;
+  }
 }
 
 .free-lesson__list {
@@ -29,13 +35,18 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
 
+  @media (max-width: $vp-1199) {
+    gap: 59px;
+  }
+
   @media (max-width: $vp-767) {
     grid-template-columns: 1fr;
+    gap: 30px;
   }
 }
 
 form label {
-position: relative;
+  position: relative;
 }
 
 form input {
@@ -54,6 +65,10 @@ form input {
   &:hover {
     opacity: 0.5;
   }
+
+  @media (max-width: $vp-1199) {
+    padding: 6px 0;
+  }
 }
 
 .free-lesson button {
@@ -61,7 +76,7 @@ form input {
   letter-spacing: 0.05em;
   text-transform: uppercase;
   text-align: center;
-  padding: 21px;
+  padding: 15px;
   cursor: pointer;
 
   &:hover {

@@ -6,17 +6,24 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 55px;
+  gap: 50px;
   padding-top: 146px;
   padding-bottom: 90px;
 
   @media (max-width: $vp-1199) {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 92px;
+    padding-bottom: 93px;
+    gap: 42px;
   }
 
   @media (max-width: $vp-767) {
-    padding: 70px 0;
+    padding: 63px 0;
+  }
+}
+
+.advantage__title {
+  @media (max-width: $vp-767) {
+    padding-right: 17px;
   }
 }
 
@@ -25,6 +32,8 @@
 
   & .advantage__description-term {
     background: linear-gradient(127.61deg, #d10a42 0%, #0041ca 45.58%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
   }
@@ -35,6 +44,8 @@
 
   & .advantage__description-term {
     background: linear-gradient(142.51deg, #d10a42 0%, #0041ca 87.33%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
   }
@@ -43,9 +54,9 @@
 .advantage-item--center-card {
   position: relative;
   z-index: 1;
-  padding: 0 60px;
+  // padding: 0 60px;
   grid-area: center-card;
-  background-color: #F8F9FC;
+  background-color: #f8f9fc;
 
   @media (max-width: $vp-1199) {
     justify-self: center;
@@ -57,23 +68,34 @@
 
   @media (max-width: $vp-767) {
     max-width: 100%;
-
   }
 }
 
 .advantage-item__wrapper {
   color: #ffffff;
-  padding: 65px 34px;
+  padding: 63px 34px;
   width: 240px;
+  height: 100%;
   background: #1c3374;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 31px;
   align-items: center;
   text-align: center;
 
   @media (max-width: $vp-1199) {
+    padding: 39px 34px;
     width: 100%;
+    position: relative;
+    left: 3px;
+    gap: 12px;
+  }
+
+  @media (max-width: $vp-767) {
+    margin-top: 9px;
+    padding: 40px 34px;
+    gap: 8px;
   }
 }
 
@@ -82,8 +104,14 @@
 
   & .advantage__description-term {
     background: linear-gradient(142.51deg, #d10a42 0%, #0041ca 87.33%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
+
+    @media (max-width: $vp-767) {
+      margin-top: 18px;
+    }
   }
 }
 
@@ -92,53 +120,68 @@
 
   & .advantage__description-term {
     background: linear-gradient(142.51deg, #d10a42 0%, #0041ca 87.33%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
   }
+}
+
+.advantage__decor-line-left {
+  grid-area: decor-line-1;
+
+  @media (max-width: $vp-1199) {
+    display: none;
+  }
+}
+
+.advantage__decor-line-right {
+  grid-area: decor-line-2;
+
+  @media (max-width: $vp-1199) {
+    display: none;
+  }
+}
+
+.advantage__decor {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
 }
 
 .advantage__list {
   position: relative;
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 0 60px 0 68px;
   display: grid;
   grid-auto-rows: auto;
+
   grid-template-areas:
     "first-card center-card second-card"
+    "decor-line-1 center-card decor-line-2"
     "third-card center-card fourth-card";
-  row-gap: 60px;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 0;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: #000;
-
-    @media (max-width: $vp-1199) {
-      display: none;
-    }
-  }
+  gap: 73px 53px;
 
   @media (max-width: $vp-1199) {
-    grid-template-columns: repeat(2, minmax(311px, 400px));
+    grid-template-columns: repeat(2, minmax(300px, 400px));
 
     grid-template-areas:
       "first-card second-card"
       "center-card center-card"
       "center-card center-card"
       "third-card fourth-card";
-    gap: 50px 60px;
+    gap: 43px 34px;
+    padding: 0;
+    padding-right: 9px;
   }
 
   @media (max-width: $vp-767) {
     width: 100%;
     grid-template-columns: 1fr;
+    gap: 34px;
+    padding: 0;
 
     grid-template-areas:
       "first-card"
@@ -152,12 +195,19 @@
 .advantage__item {
   display: flex;
   align-items: flex-start;
+  padding-left: 14px;
   gap: 30px;
+
+  @media (max-width: $vp-1199) {
+    padding-left: 0;
+    gap: 31px;
+  }
 
   @media (max-width: $vp-767) {
     flex-direction: column;
     align-items: center;
-    padding: 0 47px;
+    padding: 0 46px;
+    gap: 4px;
   }
 }
 
@@ -179,9 +229,28 @@
   }
 }
 
+.advantage__description-term--center {
+  @media (max-width: $vp-1199) {
+    @include Roboto_Condensed(700, 74px, 60px);
+  }
+}
+
 .advantage__description-definition {
   @include Roboto_Condensed(400, 14px, 21px);
   margin: 0;
+}
+
+.advantage__description-definition--center {
+  @include Roboto_Condensed(400, 26px, 39px);
+  margin-top: 7px;
+
+  @media (max-width: $vp-1199) {
+    @include Roboto_Condensed(700, 22px, 33px);
+  }
+
+  @media (max-width: $vp-767) {
+    margin-top: 2px;
+  }
 }
 
 .advantage__item-title {
@@ -202,7 +271,18 @@
   margin: 0;
   margin-top: 5px;
 
+  @media (max-width: $vp-1199) {
+    margin-top: 2px;
+  }
+
   @media (max-width: $vp-767) {
+    text-align: center;
+  }
+}
+
+.advantage__text--cebter {
+  @media (max-width: $vp-1199) {
+    max-width: 210px;
     text-align: center;
   }
 }

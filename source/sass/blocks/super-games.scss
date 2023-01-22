@@ -2,15 +2,15 @@
   display: grid;
   grid-template-columns: minmax(300px, 500px) auto;
   justify-content: center;
-  padding: 120px 103px 53px;
+  padding: 116px 103px 53px;
 
   @media (max-width: $vp-1199) {
-    padding: 100px 45px;
+    padding: 100px 45px 50px;
     grid-template-columns: minmax(200px, 292px) auto;
   }
 
   @media (max-width: $vp-767) {
-    padding: 70px 15px;
+    padding: 70px 15px 40px;
     grid-template-columns: 1fr;
   }
 }
@@ -18,43 +18,56 @@
 .super-games__wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  // aspect-ratio: 1/1;
-  padding: 87px 79px;
+  justify-content: start;
+  gap: 20px;
+  padding: 83px 79px;
   background: #ed0233;
   color: #ffffff;
 
   @media (max-width: $vp-1199) {
     padding: 50px 45px;
+    gap: 3px;
+  }
+
+  @media (max-width: $vp-767) {
+    gap: 4px;
   }
 }
 
 .super-games__info {
   display: grid;
   grid-template-columns: min-content auto;
-  justify-content: space-between;
+  justify-content: center;
   align-items: start;
-  gap: 20px;
+  gap: 29px;
+
+  @media (max-width: $vp-1199) {
+    justify-content: end;
+    gap: 36px;
+  }
 }
 
 .super-games__title {
-  // font-size: 82px;
-  // line-height: 79px;
+  font-size: 82px;
+  line-height: 79px;
   text-align: center;
   letter-spacing: 0.03em;
 
   @media (max-width: $vp-1199) {
     font-size: 48px;
     line-height: 46px;
+    padding: 0;
   }
 }
 
 .super-games__description-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  margin-left: 33px;
+  gap: 16px;
 
   @media (max-width: $vp-1199) {
+    margin: 0;
     gap: 5px;
   }
 }
@@ -63,27 +76,36 @@
   display: grid;
   grid-template-columns: min-content;
   margin: 0;
+
+  @media (max-width: $vp-1199) {
+    justify-content: start;
+  }
 }
 
 .super-games__description-term {
+  @include Roboto_Condensed(400, 18px, 27px);
   margin: 0;
-  padding-bottom: 13px;
+  padding-bottom: 7px;
+  padding-left: 7px;
   border-bottom: 1px solid #ffffff;
 
   @media (max-width: $vp-1199) {
-    padding-bottom: 7px;
+    @include Roboto_Condensed(400, 12px, 13px);
+    padding-bottom: 2px;
+    padding-left: 0;
   }
 }
 
 .super-games__description-definition {
-  @include Roboto_Condensed(700, 40px, 60px);
+  @include Roboto_Condensed(700, 40px, 49px);
   margin: 0;
   display: flex;
   align-items: center;
   gap: 7px;
 
   @media (max-width: $vp-1199) {
-    @include Roboto_Condensed(700, 24px, 36px);
+    @include Roboto_Condensed(700, 24px, 31px);
+    gap: 2px;
   }
 }
 
@@ -93,7 +115,7 @@
   flex-direction: column;
 
   @media (max-width: $vp-1199) {
-    @include Roboto_Condensed(400, 12px, 18px);
+    @include Roboto_Condensed(400, 10px, 11px);
   }
 }
 
@@ -103,20 +125,32 @@
 // }
 
 .super-games__text {
+  @include Roboto_Condensed(400, 18px, 27px);
   margin: 0;
-  margin-top: 30px;
 
   @media (max-width: $vp-1199) {
-    margin-top: 15px;
+
+    @include Roboto_Condensed(400, 12px, 18px);
+    margin-top: 0;
   }
 }
 
 .super-games__button {
-  margin-top: 55px;
+  margin-top: 22px;
+  padding: 22px;
+
+  &:hover {
+    background: #be012a;
+  }
+
+  &:active {
+    background: #9b0324;
+  }
 
   @media (max-width: $vp-1199) {
-    padding: 16px;
-    margin-top: 36px;
+    @include Roboto_Condensed(400, 10px, 12px);
+    padding: 10px;
+    margin-top: 26px;
   }
 }
 
@@ -126,7 +160,6 @@
 
   @media (max-width: $vp-1199) {
     width: 100%;
-
   }
 
   @media (max-width: $vp-767) {

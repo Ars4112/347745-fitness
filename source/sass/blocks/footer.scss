@@ -2,8 +2,12 @@
   background: #030a1a;
   padding: 40px 0;
 
+  @media (max-width: $vp-1199) {
+    padding: 43px 0;
+  }
+
   @media (max-width: $vp-767) {
-    padding: 50px 0;
+    padding: 46px 0;
   }
 }
 
@@ -18,8 +22,14 @@
 }
 
 .footer__logo {
+  @include Alumni_Sans(26px, 31px);
+  letter-spacing: 0.02em;
   color: #ffffff;
   cursor: default;
+
+  @media (max-width: $vp-1199) {
+    @include Alumni_Sans(24px, 29px);
+  }
 
   @media (max-width: $vp-767) {
     display: none;
@@ -34,15 +44,25 @@
   grid-template-columns: repeat(5, auto);
   gap: 20px 40px;
 
+  @media (max-width: $vp-1199) {
+    margin-top: 6px;
+    gap: 20px 30px;
+    position: relative;
+    left: 7px;
+  }
+
   @media (max-width: $vp-767) {
     display: block;
     column-count: 2;
+    left: 0;
+    margin-top: 0;
   }
 }
 
 .footer__item {
   @media (max-width: $vp-767) {
-    margin-bottom: 30px;
+    margin-bottom: 19px;
+    margin-right: 57px;
 
     &:nth-child(3) {
       break-before: avoid;
@@ -55,16 +75,31 @@
 
   @media (max-width: $vp-767) {
     display: block;
-    margin-right: 71px;
   }
 }
 
 .footer__link--logo {
   cursor: default;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 1;
+  }
 }
 
 .footer__link {
   color: #ffffff;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 }
 
 .footer__social-list {
@@ -72,13 +107,23 @@
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
+  max-width: 130px;
   gap: 10px;
 
   @media (max-width: $vp-767) {
-    margin-top: 40px;
+    margin-top: 15px;
   }
 }
 
 .footer__social-link {
   color: #ffffff;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 }

@@ -10,8 +10,5 @@
 <path fill-rule="evenodd" clip-rule="evenodd" d="M18.5 6H10V17H18.5C21.5376 17 24 14.5376 24 11.5C24 8.46243 21.5376 6 18.5 6ZM4 0V23H18.5C24.8513 23 30 17.8513 30 11.5C30 5.14873 24.8513 0 18.5 0H4Z" fill="#102654"/></symbol>
 <symbol id="arrow-left"><path d="M17 33L0.999999 17L17 0.999998" stroke="currentColor"/></symbol>
 <symbol id="arrow-right"><path d="M1 1L17 17L1 33" stroke="currentColor"/></symbol>
-</symbol><symbol id="Vector 2.10" viewBox="0 0 18 34"><g fill="none">
-<path d="M1 1L17 17L1 33" stroke="#AFAFAF"/>
-</g></symbol><symbol id="Vector 2.11" viewBox="0 0 18 34"><g fill="none">
-<path d="M17 33L0.999999 17L17 0.999998" stroke="#AFAFAF"/>
-</g></symbol></svg>
+<symbol id="play"><path d="M13 7.5L0.249999 14.8612L0.25 0.138783L13 7.5Z" fill="white"/></symbol>
+</symbol></svg>

@@ -7,15 +7,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 5px;
-  padding: 120px 103px;
+
+  padding: 125px 103px;
 
   @media (max-width: $vp-1199) {
     padding: 100px 163px;
+    gap: 3px;
   }
 
   @media (max-width: $vp-767) {
-    padding: 70px 15px;
+    padding: 70px 15px 65px;
+    gap: 5px;
   }
 }
 
@@ -23,8 +25,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 38px;
+  gap: 32px;
   width: 100%;
+
+  @media (max-width: $vp-1199) {
+    gap: 40px;
+  }
 }
 
 .subscription__period-list {
@@ -33,9 +39,10 @@
   padding: 0;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 46px;
   border-bottom: 2px solid #78787833;
-  order: -1;
+
 
   @media (max-width: $vp-1199) {
     gap: 54px;
@@ -52,12 +59,23 @@
 .subscription__button {
   @include Roboto_Condensed(400, 20px, 30px);
   display: block;
-  padding: 20px 0;
+  padding: 17px 0;
   color: #10265480;
   cursor: pointer;
 
   &:hover {
     color: #102654;
+  }
+
+  @media (max-width: $vp-1199) {
+    @include Roboto_Condensed(400, 18px, 27px);
+    padding: 14px 0;
+  }
+
+  @media (max-width: $vp-767) {
+    @include Roboto_Condensed(400, 16px, 24px);
+    padding: 13px 0;
+    padding-right: 7px;
   }
 }
 
@@ -84,7 +102,11 @@
 .subscription__image {
   position: absolute;
   right: 0;
-  bottom: -124px;
+  bottom: -145px;
+
+  @media (max-width: $vp-1199) {
+    bottom: -122px;
+  }
 
   @media (max-width: $vp-767) {
     display: none;
