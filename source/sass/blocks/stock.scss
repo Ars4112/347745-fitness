@@ -16,7 +16,6 @@
 }
 
 .stock__title {
-
   @media (max-width: $vp-1199) {
     padding-right: 10px;
 
@@ -24,7 +23,6 @@
       padding-right: 5px;
     }
   }
-
 }
 
 .stock__wrapper {
@@ -72,7 +70,6 @@
   @media (max-width: $vp-1199) {
     padding-bottom: 48px;
   }
-
 
   @media (max-width: $vp-767) {
     padding-top: 35px;
@@ -162,7 +159,7 @@
 .stock__link {
   @include Roboto_Condensed(400, 14px, 16px);
   letter-spacing: 0.05em;
-text-transform: uppercase;
+  text-transform: uppercase;
   border-bottom: 1px solid #1c3374;
   align-self: start;
   padding: 5px 0;
@@ -181,7 +178,6 @@ text-transform: uppercase;
     margin-top: 49px;
   }
 
-
   @media (max-width: $vp-767) {
     align-self: center;
     margin-top: 29px;
@@ -194,10 +190,5 @@ text-transform: uppercase;
 
   @media (max-width: $vp-1199) {
     @include Roboto_Condensed(400, 14px, 16px);
-
   }
-
-  // &:hover {
-  //   opacity: 0.5;
-  // }
 }

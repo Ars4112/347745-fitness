@@ -85,7 +85,7 @@
 .super-games__description-term {
   @include Roboto_Condensed(400, 18px, 27px);
   margin: 0;
-  padding-bottom: 7px;
+
   padding-left: 7px;
   border-bottom: 1px solid #ffffff;
 
@@ -119,17 +119,11 @@
   }
 }
 
-// .super-games__description-date {
-//   // @include Roboto_Condensed(700, 40px, 60px);
-
-// }
-
 .super-games__text {
   @include Roboto_Condensed(400, 18px, 27px);
   margin: 0;
 
   @media (max-width: $vp-1199) {
-
     @include Roboto_Condensed(400, 12px, 18px);
     margin-top: 0;
   }

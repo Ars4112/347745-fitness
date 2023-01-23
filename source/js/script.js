@@ -26,7 +26,11 @@ const addTabs = ()=> {
       subscriptionListId.classList.add('subscription__price-list--active');
     });
   });
-  subscriptionButton[0].click();
+
+  if (subscriptionButton[0]) {
+    subscriptionButton[0].click();
+  }
+
 };
 
 const addMask = () => {
@@ -146,101 +150,110 @@ const addValid = ()=> {
 };
 
 const addScroll = ()=> {
-  headerButton.addEventListener('click', (evt)=> {
-    evt.preventDefault();
-    subscription.scrollIntoView({
-      block: 'start',
-      behavior: 'smooth',
+
+  if (headerButton) {
+    headerButton.addEventListener('click', (evt)=> {
+      evt.preventDefault();
+      subscription.scrollIntoView({
+        block: 'start',
+        behavior: 'smooth',
+      });
     });
-  });
+  }
+
 };
 
 const addSlider = ()=> {
-
   const trainersWrapper = document.querySelector('.trainers__wrapper');
-  const list = trainersWrapper.querySelector('.trainers__list');
-  const items = list.querySelectorAll('.trainers__item');
-  const sliderButton = document.querySelectorAll('.trainers__button');
-  const buttonLeft = document.querySelector('.trainers__button--left');
-  const buttonRight = document.querySelector('.trainers__button--right');
+  if (trainersWrapper) {
 
-  trainersWrapper.classList.add('swiper-container');
-  list.classList.add('swiper-wrapper');
-  list.classList.remove('trainers__list--display');
-  items.forEach((element)=> {
-    element.classList.add('swiper-slide');
-  });
-  sliderButton.forEach((element)=> {
-    element.classList.remove('trainers__button--hidden');
-  });
-  buttonLeft.classList.add('swiper-button-prev');
-  buttonRight.classList.add('swiper-button-next');
+    const list = trainersWrapper.querySelector('.trainers__list');
+    const items = list.querySelectorAll('.trainers__item');
+    const sliderButton = document.querySelectorAll('.trainers__button');
+    const buttonLeft = document.querySelector('.trainers__button--left');
+    const buttonRight = document.querySelector('.trainers__button--right');
 
-  const swiper = new Swiper('.trainers__wrapper', {
-    modules: [Navigation, Pagination],
-    navigation: {
-      nextEl: '.trainers__button--right',
-      prevEl: '.trainers__button--left',
-    },
+    trainersWrapper.classList.add('swiper-container');
+    list.classList.add('swiper-wrapper');
+    list.classList.remove('trainers__list--display');
+    items.forEach((element)=> {
+      element.classList.add('swiper-slide');
+    });
+    sliderButton.forEach((element)=> {
+      element.classList.remove('trainers__button--hidden');
+    });
+    buttonLeft.classList.add('swiper-button-prev');
+    buttonRight.classList.add('swiper-button-next');
 
-    slidesPerView: 4,
-
-    loop: true,
-
-    spaceBetween: 40,
-
-    breakpoints: {
-      300: {
-        slidesPerView: 1,
+    const swiper = new Swiper('.trainers__wrapper', {
+      modules: [Navigation, Pagination],
+      navigation: {
+        nextEl: '.trainers__button--right',
+        prevEl: '.trainers__button--left',
       },
-      768: {
-        slidesPerView: 2,
-        spaceBetween: 30,
-      },
-      1199: {
-        slidesPerView: 4,
-        spaceBetween: 40,
-      },
-    },
-  });
 
+      slidesPerView: 4,
+
+      loop: true,
+
+      spaceBetween: 40,
+
+      breakpoints: {
+        300: {
+          slidesPerView: 1,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+        },
+        1199: {
+          slidesPerView: 4,
+          spaceBetween: 40,
+        },
+      },
+    });
+  }
 };
 
 
 const addCarousel = ()=> {
+
   const reviewsWrapper = document.querySelector('.reviews__wrapper');
-  const reviewsList = reviewsWrapper.querySelector('.reviews__list');
-  const reviewsItems = reviewsList.querySelectorAll('.reviews__item');
-  const sliderButton = document.querySelectorAll('.reviews__button');
-  const buttonLeft = reviewsWrapper.querySelector('.reviews__button--left');
-  const buttonRight = reviewsWrapper.querySelector('.reviews__button--right');
 
-  sliderButton.forEach((element)=> {
-    element.classList.remove('reviews__button--hidden');
-  });
+  if (reviewsWrapper) {
+    const reviewsList = reviewsWrapper.querySelector('.reviews__list');
+    const reviewsItems = reviewsList.querySelectorAll('.reviews__item');
+    const sliderButton = document.querySelectorAll('.reviews__button');
+    const buttonLeft = reviewsWrapper.querySelector('.reviews__button--left');
+    const buttonRight = reviewsWrapper.querySelector('.reviews__button--right');
 
-  reviewsWrapper.classList.add('swiper-container');
-  reviewsList.classList.add('swiper-wrapper');
-  reviewsList.classList.remove('reviews__list--display');
-  reviewsItems.forEach((element)=> {
-    element.classList.add('swiper-slide');
-  });
-  buttonLeft.classList.add('swiper-button-prev');
+    sliderButton.forEach((element)=> {
+      element.classList.remove('reviews__button--hidden');
+    });
 
-  buttonRight.classList.add('swiper-button-next');
+    reviewsWrapper.classList.add('swiper-container');
+    reviewsList.classList.add('swiper-wrapper');
+    reviewsList.classList.remove('reviews__list--display');
+    reviewsItems.forEach((element)=> {
+      element.classList.add('swiper-slide');
+    });
+    buttonLeft.classList.add('swiper-button-prev');
 
-  const swiper = new Swiper('.reviews__wrapper', {
-    modules: [Navigation, Pagination],
-    navigation: {
-      nextEl: '.reviews__button--right',
-      prevEl: '.reviews__button--left',
-    },
+    buttonRight.classList.add('swiper-button-next');
 
-    slidesPerView: 1,
+    const swiper = new Swiper('.reviews__wrapper', {
+      modules: [Navigation, Pagination],
+      navigation: {
+        nextEl: '.reviews__button--right',
+        prevEl: '.reviews__button--left',
+      },
 
-    spaceBetween: 30,
+      slidesPerView: 1,
 
-  });
+      spaceBetween: 30,
+
+    });
+  }
 
 };
 
@@ -248,13 +261,17 @@ const addVideo = ()=> {
   const videoButton = document.querySelector('.gym__play-button');
   const videoOverlay = document.querySelector('.gym__overlay');
 
-  videoButton.addEventListener('click', (evt)=> {
-    evt.preventDefault();
+  if (videoButton) {
+    videoButton.addEventListener('click', (evt)=> {
+      evt.preventDefault();
 
-    videoButton.remove();
-    videoOverlay.remove();
+      videoButton.remove();
+      videoOverlay.remove();
 
-  });
+    });
+  }
+
+
 };
 
 window.addEventListener('DOMContentLoaded', ()=> {

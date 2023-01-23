@@ -95,12 +95,14 @@
 }
 
 .gym__text--hidden {
+
   @media (max-width: $vp-1199) {
     display: none;
   }
 }
 
 .gym__column-wrapper {
+
   @media (max-width: $vp-767) {
     display: flex;
     flex-direction: column;
@@ -184,7 +186,7 @@
     height: 100px;
     border: 2px solid transparent;
     background: linear-gradient(45deg, #ed023333, #003eb733) border-box;
-    mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#ffffff 0 0) padding-box, linear-gradient(#ffffff 0 0);
     mask-composite: exclude;
     border-radius: 50%;
   }
@@ -221,7 +223,7 @@
   height: 72px;
   background: linear-gradient(44.89deg, #003d85 25.38%, #b80027 74.89%);
   border-radius: 50%;
-  mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#ffffff 0 0) padding-box, linear-gradient(#ffffff 0 0);
 
   @media (max-width: $vp-1199) {
     width: 52px;

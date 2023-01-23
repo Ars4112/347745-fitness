@@ -2254,7 +2254,6 @@ h2 {
   font-size: 18px;
   line-height: 27px;
   margin: 0;
-  padding-bottom: 7px;
   padding-left: 7px;
   border-bottom: 1px solid #ffffff;
 }
@@ -2482,6 +2481,7 @@ h2 {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  max-width: 110px;
 }
 
 .advantage__description-term {
@@ -2615,6 +2615,7 @@ h2 {
   line-height: 22px;
   margin: 0;
   grid-area: text;
+  max-height: 87px;
   overflow: auto;
 }
 
@@ -3223,10 +3224,6 @@ form input:hover {
   -webkit-column-break-before: avoid;
   -moz-column-break-before: avoid;
   break-before: avoid;
-}
-
-.contacts__item:nth-child(2n) {
-  margin-bottom: 0;
 }
 
 .contacts__item-title {
@@ -3858,7 +3855,7 @@ form input:hover {
   }
 
   .contacts {
-    padding: 60px 76px 64px;
+    padding: 60px 76px 43px;
   }
 
   .contacts__title {
@@ -4188,6 +4185,7 @@ form input:hover {
 
   .advantage-item--center-card {
     max-width: 100%;
+    left: -3px;
   }
 
   .advantage-item__wrapper {

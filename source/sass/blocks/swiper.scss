@@ -4,16 +4,10 @@
 
 .swiper-wrapper {
   display: flex;
-flex-direction: row;
-
+  flex-direction: row;
 }
 
 .swiper-slide {
   min-width: 0;
   width: 100%;
 }
-
-// .swiper-button-prev {
-//   color: #AFAFAF;
-// }
-
