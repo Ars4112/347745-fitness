@@ -43,6 +43,11 @@
     transform: translateX(-50%);
     width: 1px;
     background: #74819c;
+
+    @media (max-width: $vp-1199) {
+      top: 7px;
+      bottom: 26px;
+    }
   }
 
   @media (max-width: $vp-767) {
@@ -62,7 +67,8 @@
   flex-direction: column;
   gap: 6px;
   padding-left: 60px;
-  margin-bottom: 18px;
+  padding-bottom: 18px;
+  break-inside: avoid;
 
   &:nth-child(2) {
     break-before: avoid;
@@ -72,7 +78,7 @@
     padding: 0;
     padding-left: 57px;
     gap: 3px;
-    margin-bottom: 22px;
+    padding-bottom: 22px;
   }
 
   @media (max-width: $vp-767) {

@@ -1765,10 +1765,10 @@ h2 {
   border: 2px solid transparent;
   background: -o-linear-gradient(45deg, rgba(237, 2, 51, 0.2), rgba(0, 62, 183, 0.2)) border-box;
   background: linear-gradient(45deg, rgba(237, 2, 51, 0.2), rgba(0, 62, 183, 0.2)) border-box;
-  -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff)) padding-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
-  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
-  mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff)) padding-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
-  mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ffffff)) padding-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #ffffff));
+  -webkit-mask: linear-gradient(#ffffff 0 0) padding-box, linear-gradient(#ffffff 0 0);
+  mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ffffff)) padding-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #ffffff));
+  mask: linear-gradient(#ffffff 0 0) padding-box, linear-gradient(#ffffff 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
   border-radius: 50%;
@@ -1796,10 +1796,10 @@ h2 {
   background: -o-linear-gradient(45.11deg, #003d85 25.38%, #b80027 74.89%);
   background: linear-gradient(44.89deg, #003d85 25.38%, #b80027 74.89%);
   border-radius: 50%;
-  -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff)) padding-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
-  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
-  mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff)) padding-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #fff));
-  mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ffffff)) padding-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #ffffff));
+  -webkit-mask: linear-gradient(#ffffff 0 0) padding-box, linear-gradient(#ffffff 0 0);
+  mask: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ffffff)) padding-box, -webkit-gradient(linear, left top, left bottom, color-stop(0, #ffffff));
+  mask: linear-gradient(#ffffff 0 0) padding-box, linear-gradient(#ffffff 0 0);
 }
 
 .gym__play-icon {
@@ -2446,7 +2446,7 @@ h2 {
   display: block;
   width: 100%;
   height: 2px;
-  background-color: #000;
+  background-color: #000000;
 }
 
 .advantage__list {
@@ -3217,7 +3217,10 @@ form input:hover {
   flex-direction: column;
   gap: 6px;
   padding-left: 60px;
-  margin-bottom: 18px;
+  padding-bottom: 18px;
+  -webkit-column-break-inside: avoid;
+  -moz-column-break-inside: avoid;
+  break-inside: avoid;
 }
 
 .contacts__item:nth-child(2) {
@@ -3863,11 +3866,16 @@ form input:hover {
     padding-left: 57px;
   }
 
+  .contacts__list::before {
+    top: 7px;
+    bottom: 26px;
+  }
+
   .contacts__item {
     padding: 0;
     padding-left: 57px;
     gap: 3px;
-    margin-bottom: 22px;
+    padding-bottom: 22px;
   }
 
   .contacts__item-title {
