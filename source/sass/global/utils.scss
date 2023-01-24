@@ -105,3 +105,17 @@ h2 {
   /* stylelint-disable-next-line */
   transition: none !important;
 }
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #afafaf;
+  border-radius: 8px;
+  border: 2px solid transparent;
+}
+
+::-webkit-scrollbar-track {
+  background: #06184b;
+}

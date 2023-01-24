@@ -32,9 +32,12 @@
 
   & .advantage__description-term {
     background: linear-gradient(127.61deg, #d10a42 0%, #0041ca 45.58%);
+    // eslint-disable-next-line
     -webkit-background-clip: text;
+    // eslint-disable-next-line
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    // eslint-disable-next-line
     text-fill-color: transparent;
   }
 }
@@ -44,9 +47,12 @@
 
   & .advantage__description-term {
     background: linear-gradient(142.51deg, #d10a42 0%, #0041ca 87.33%);
+    // eslint-disable-next-line
     -webkit-background-clip: text;
+    // eslint-disable-next-line
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    // eslint-disable-next-line
     text-fill-color: transparent;
   }
 }
@@ -62,7 +68,6 @@
     padding: 45px 135px;
     max-width: 442px;
     width: 100%;
-    padding: 0;
   }
 
   @media (max-width: $vp-767) {
@@ -104,9 +109,12 @@
 
   & .advantage__description-term {
     background: linear-gradient(142.51deg, #d10a42 0%, #0041ca 87.33%);
+    // eslint-disable-next-line
     -webkit-background-clip: text;
+    // eslint-disable-next-line
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    // eslint-disable-next-line
     text-fill-color: transparent;
 
     @media (max-width: $vp-767) {
@@ -120,9 +128,12 @@
 
   & .advantage__description-term {
     background: linear-gradient(142.51deg, #d10a42 0%, #0041ca 87.33%);
+    // eslint-disable-next-line
     -webkit-background-clip: text;
+    // eslint-disable-next-line
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    // eslint-disable-next-line
     text-fill-color: transparent;
   }
 }

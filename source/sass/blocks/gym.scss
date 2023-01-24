@@ -88,21 +88,19 @@
   }
 }
 
-.gym__text {
+.gym p {
   @include Roboto_Condensed(300, 16px, 24px);
   margin: 0;
   margin-top: 8px;
 }
 
-.gym__text--hidden {
-
+.gym p:last-child {
   @media (max-width: $vp-1199) {
     display: none;
   }
 }
 
 .gym__column-wrapper {
-
   @media (max-width: $vp-767) {
     display: flex;
     flex-direction: column;

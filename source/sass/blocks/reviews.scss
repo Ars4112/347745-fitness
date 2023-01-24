@@ -97,7 +97,7 @@
   @include Roboto_Condensed(400, 16px, 22px);
   margin: 0;
   grid-area: text;
-  max-height: 87px;
+  max-height: 88px;
   overflow: auto;
 
   @media (max-width: $vp-767) {

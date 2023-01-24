@@ -1547,6 +1547,20 @@ h2 {
   transition: none !important;
 }
 
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #afafaf;
+  border-radius: 8px;
+  border: 2px solid transparent;
+}
+
+::-webkit-scrollbar-track {
+  background: #06184b;
+}
+
 .container {
   width: 100%;
   max-width: 1366px;
@@ -1690,7 +1704,7 @@ h2 {
   margin-bottom: 36px;
 }
 
-.gym__text {
+.gym p {
   font-family: "Roboto-Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 300;
@@ -2615,7 +2629,7 @@ h2 {
   line-height: 22px;
   margin: 0;
   grid-area: text;
-  max-height: 87px;
+  max-height: 88px;
   overflow: auto;
 }
 
@@ -2954,7 +2968,7 @@ h2 {
   gap: 12px;
   max-width: 160px;
   height: auto;
-  max-height: 133px;
+  max-height: 115px;
   overflow-y: auto;
 }
 
@@ -3376,7 +3390,7 @@ form input:hover {
     margin-bottom: 34px;
   }
 
-  .gym__text--hidden {
+  .gym p:last-child {
     display: none;
   }
 
@@ -3629,7 +3643,6 @@ form input:hover {
     padding: 45px 135px;
     max-width: 442px;
     width: 100%;
-    padding: 0;
   }
 
   .advantage-item__wrapper {

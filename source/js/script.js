@@ -185,6 +185,7 @@ const addSlider = ()=> {
     buttonLeft.classList.add('swiper-button-prev');
     buttonRight.classList.add('swiper-button-next');
 
+    // eslint-disable-next-line
     const swiper = new Swiper('.trainers__wrapper', {
       modules: [Navigation, Pagination],
       navigation: {
@@ -241,6 +242,7 @@ const addCarousel = ()=> {
 
     buttonRight.classList.add('swiper-button-next');
 
+    // eslint-disable-next-line
     const swiper = new Swiper('.reviews__wrapper', {
       modules: [Navigation, Pagination],
       navigation: {
