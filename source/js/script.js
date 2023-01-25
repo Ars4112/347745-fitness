@@ -270,10 +270,10 @@ const addVideo = ()=> {
       videoButton.remove();
       videoOverlay.remove();
 
+      document.querySelector('.gym__frame').src = document.querySelector('.gym__frame').src + '?autoplay=1';
+
     });
   }
-
-
 };
 
 window.addEventListener('DOMContentLoaded', ()=> {

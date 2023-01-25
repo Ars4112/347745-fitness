@@ -192,6 +192,8 @@
 
   @media (max-width: $vp-767) {
     top: 63%;
+    width: 10px;
+    height: 18px;
   }
 }
 
@@ -201,24 +203,16 @@
 
 .trainers__button--right {
   right: 45px;
-  width: 16px;
-  height: 32px;
 
   @media (max-width: $vp-767) {
     right: 18px;
-    width: 10px;
-    height: 18px;
   }
 }
 
 .trainers__button--left {
   left: 45px;
-  width: 16px;
-  height: 32px;
 
   @media (max-width: $vp-767) {
     left: 18px;
-    width: 10px;
-    height: 18px;
   }
 }

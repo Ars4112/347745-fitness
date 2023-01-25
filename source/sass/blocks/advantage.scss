@@ -32,13 +32,8 @@
 
   & .advantage__description-term {
     background: linear-gradient(127.61deg, #d10a42 0%, #0041ca 45.58%);
-    // eslint-disable-next-line
-    -webkit-background-clip: text;
-    // eslint-disable-next-line
-    -webkit-text-fill-color: transparent;
     background-clip: text;
-    // eslint-disable-next-line
-    text-fill-color: transparent;
+    color: transparent;
   }
 }
 
@@ -47,13 +42,8 @@
 
   & .advantage__description-term {
     background: linear-gradient(142.51deg, #d10a42 0%, #0041ca 87.33%);
-    // eslint-disable-next-line
-    -webkit-background-clip: text;
-    // eslint-disable-next-line
-    -webkit-text-fill-color: transparent;
     background-clip: text;
-    // eslint-disable-next-line
-    text-fill-color: transparent;
+    color: transparent;
   }
 }
 
@@ -109,13 +99,8 @@
 
   & .advantage__description-term {
     background: linear-gradient(142.51deg, #d10a42 0%, #0041ca 87.33%);
-    // eslint-disable-next-line
-    -webkit-background-clip: text;
-    // eslint-disable-next-line
-    -webkit-text-fill-color: transparent;
     background-clip: text;
-    // eslint-disable-next-line
-    text-fill-color: transparent;
+    color: transparent;
 
     @media (max-width: $vp-767) {
       margin-top: 18px;
@@ -128,13 +113,8 @@
 
   & .advantage__description-term {
     background: linear-gradient(142.51deg, #d10a42 0%, #0041ca 87.33%);
-    // eslint-disable-next-line
-    -webkit-background-clip: text;
-    // eslint-disable-next-line
-    -webkit-text-fill-color: transparent;
     background-clip: text;
-    // eslint-disable-next-line
-    text-fill-color: transparent;
+    color: transparent;
   }
 }
 

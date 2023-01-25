@@ -11,3 +11,23 @@
   min-width: 0;
   width: 100%;
 }
+
+.swiper-button-next {
+  width: 16px;
+  height: 32px;
+
+  @media (max-width: $vp-767) {
+    width: 10px;
+    height: 18px;
+  }
+}
+
+.swiper-button-prev {
+  width: 16px;
+  height: 32px;
+
+  @media (max-width: $vp-767) {
+    width: 10px;
+    height: 18px;
+  }
+}

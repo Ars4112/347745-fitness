@@ -2361,9 +2361,8 @@ h2 {
   background: -o-linear-gradient(322.39deg, #d10a42 0%, #0041ca 45.58%);
   background: linear-gradient(127.61deg, #d10a42 0%, #0041ca 45.58%);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-fill-color: transparent;
+  color: transparent;
 }
 
 .advantage__item--second-card {
@@ -2376,9 +2375,8 @@ h2 {
   background: -o-linear-gradient(307.49deg, #d10a42 0%, #0041ca 87.33%);
   background: linear-gradient(142.51deg, #d10a42 0%, #0041ca 87.33%);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-fill-color: transparent;
+  color: transparent;
 }
 
 .advantage-item--center-card {
@@ -2424,9 +2422,8 @@ h2 {
   background: -o-linear-gradient(307.49deg, #d10a42 0%, #0041ca 87.33%);
   background: linear-gradient(142.51deg, #d10a42 0%, #0041ca 87.33%);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-fill-color: transparent;
+  color: transparent;
 }
 
 .advantage__item--fourth-card {
@@ -2439,9 +2436,8 @@ h2 {
   background: -o-linear-gradient(307.49deg, #d10a42 0%, #0041ca 87.33%);
   background: linear-gradient(142.51deg, #d10a42 0%, #0041ca 87.33%);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-fill-color: transparent;
+  color: transparent;
 }
 
 .advantage__decor-line-left {
@@ -3030,14 +3026,10 @@ h2 {
 
 .trainers__button--right {
   right: 45px;
-  width: 16px;
-  height: 32px;
 }
 
 .trainers__button--left {
   left: 45px;
-  width: 16px;
-  height: 32px;
 }
 
 .feedback__container {
@@ -3278,6 +3270,16 @@ form input:hover {
 .swiper-slide {
   min-width: 0;
   width: 100%;
+}
+
+.swiper-button-next {
+  width: 16px;
+  height: 32px;
+}
+
+.swiper-button-prev {
+  width: 16px;
+  height: 32px;
 }
 
 /* @mixin hover-focus {
@@ -4416,18 +4418,16 @@ form input:hover {
 
   .trainers__button {
     top: 63%;
+    width: 10px;
+    height: 18px;
   }
 
   .trainers__button--right {
     right: 18px;
-    width: 10px;
-    height: 18px;
   }
 
   .trainers__button--left {
     left: 18px;
-    width: 10px;
-    height: 18px;
   }
 
   .feedback__container {
@@ -4477,5 +4477,15 @@ form input:hover {
     padding: 0;
     gap: 7px;
     margin-bottom: 0;
+  }
+
+  .swiper-button-next {
+    width: 10px;
+    height: 18px;
+  }
+
+  .swiper-button-prev {
+    width: 10px;
+    height: 18px;
   }
 }
