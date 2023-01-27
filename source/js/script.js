@@ -261,18 +261,23 @@ const addCarousel = ()=> {
 
 const addVideo = ()=> {
   const videoButton = document.querySelector('.gym__play-button');
-  const videoOverlay = document.querySelector('.gym__overlay');
+  const videoImageOverlay = document.querySelector('.gym__image-overlay');
+  const videoOverlay = document.querySelector('.gym__vidio-overlay');
+
+  const playVidio = (evt)=> {
+    evt.preventDefault();
+    videoButton.remove();
+    videoImageOverlay.remove();
+    videoOverlay.remove();
+
+    document.querySelector('.gym__frame').src = document.querySelector('.gym__frame').src + '?autoplay=1';
+
+  };
 
   if (videoButton) {
-    videoButton.addEventListener('click', (evt)=> {
-      evt.preventDefault();
+    videoButton.addEventListener('click', playVidio);
 
-      videoButton.remove();
-      videoOverlay.remove();
-
-      document.querySelector('.gym__frame').src = document.querySelector('.gym__frame').src + '?autoplay=1';
-
-    });
+    videoButton.addEventListener('keydown', playVidio);
   }
 };
 

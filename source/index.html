@@ -49,7 +49,15 @@
         <div class="header__container container">
           <ul class="header__list">
             <li class="header__item">
-              <a class="header__logo" href="#" tabindex="-1">SUPERGYM</a>
+              <a class="header__logo" href="#" tabindex="-1">
+                <svg class="header-icon"
+                width="122"
+                height="44"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 123 24"
+              >
+                <use href="img/sprite/sprite.svg#logo"></use>
+              </svg></a>
             </li>
             <li class="header__item">
               <a class="header__phone-link" href="tel:8-800-555-55-55"
@@ -179,15 +187,9 @@
                   />
                 </picture>
                 <div class="gym__vidio-wrapper">
-                  <div class="gym__vidio" id="player">
+                  <div class="gym__vidio">
+                    <div class="gym__vidio-overlay"></div>
                     <picture>
-                      <source
-                        type="image/webp"
-                        media="(max-width: 1199px)"
-                        srcset="img/video.webp 1x, img/video@2x.webp 2x"
-                        width="266"
-                        height="167"
-                      />
                       <source
                         type="image/webp"
                         media="(max-width: 767px)"
@@ -200,15 +202,17 @@
                       />
                       <source
                         type="image/webp"
+                        media="(max-width: 1199px)"
+                        srcset="img/video.webp 1x, img/video@2x.webp 2x"
+                        width="266"
+                        height="167"
+                      />
+
+                      <source
+                        type="image/webp"
                         srcset="img/video.webp 1x, img/video@2x.webp 2x"
                         width="366"
                         height="228"
-                      />
-                      <source
-                        media="(max-width: 1199px)"
-                        srcset="img/video.jpg 1x, img/video@2x.jpg 2x"
-                        width="266"
-                        height="167"
                       />
                       <source
                         media="(max-width: 767px)"
@@ -216,8 +220,14 @@
                         width="320"
                         height="167"
                       />
+                      <source
+                        media="(max-width: 1199px)"
+                        srcset="img/video.jpg 1x, img/video@2x.jpg 2x"
+                        width="266"
+                        height="167"
+                      />
                       <img
-                        class="gym__overlay"
+                        class="gym__image-overlay"
                         src="img/video.jpg"
                         srcset="img/video@2x.jpg"
                         alt="изображение тренажёрного зала"
@@ -229,6 +239,7 @@
                       class="gym__play-button"
                       href="https://www.youtube.com/embed/9TZXsZItgdw"
                     >
+                    <span class="visually-hidden">воспроизвести видео</span>
                       <span class="gym__play">
                         <svg
                           class="gym__play-icon"
@@ -241,6 +252,7 @@
                         </svg>
                       </span>
                     </a>
+
                     <iframe  class="gym__frame" src="https://www.youtube.com/embed/9TZXsZItgdw" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy" tabindex="-1"> </iframe>
                   </div>
                 </div>
@@ -645,6 +657,7 @@
             <div class="trainers__wrapper">
               <ul class="trainers__list trainers__list--display">
                 <li class="trainers__item">
+                  <a class="trainers__link" href="#">
                   <div class="trainers__item-wrapper">
                     <h3 class="trainers__name">Анна Павлова</h3>
                     <span class="trainers__course">CrossFit</span>
@@ -705,8 +718,10 @@
                   <h3 class="trainers__name trainers__name--position">
                     Анна Павлова
                   </h3>
+                </a>
                 </li>
                 <li class="trainers__item">
+                  <a class="trainers__link" href="#">
                   <div class="trainers__item-wrapper">
                     <h3 class="trainers__name">Алексей Лавров</h3>
                     <span class="trainers__course">CrossFit</span>
@@ -767,8 +782,10 @@
                   <h3 class="trainers__name trainers__name--position">
                     Алексей Лавров
                   </h3>
+                </a>
                 </li>
                 <li class="trainers__item">
+                  <a class="trainers__link" href="#">
                   <div class="trainers__item-wrapper">
                     <h3 class="trainers__name">Александр Пашков</h3>
                     <span class="trainers__course">CrossFit</span>
@@ -829,8 +846,10 @@
                   <h3 class="trainers__name trainers__name--position">
                     Александр Пашков
                   </h3>
+                </a>
                 </li>
                 <li class="trainers__item">
+                  <a class="trainers__link" href="#">
                   <div class="trainers__item-wrapper">
                     <h3 class="trainers__name">Мария Кетова</h3>
                     <span class="trainers__course">CrossFit</span>
@@ -891,8 +910,10 @@
                   <h3 class="trainers__name trainers__name--position">
                     Мария Кетова
                   </h3>
+                </a>
                 </li>
                 <li class="trainers__item">
+                  <a class="trainers__link" href="#">
                   <div class="trainers__item-wrapper">
                     <h3 class="trainers__name">Анна Павлова</h3>
                     <span class="trainers__course">CrossFit</span>
@@ -953,8 +974,10 @@
                   <h3 class="trainers__name trainers__name--position">
                     Анна Павлова
                   </h3>
+                </a>
                 </li>
                 <li class="trainers__item">
+                  <a class="trainers__link" href="#">
                   <div class="trainers__item-wrapper">
                     <h3 class="trainers__name">Алексей Лавров</h3>
                     <span class="trainers__course">CrossFit</span>
@@ -1015,8 +1038,10 @@
                   <h3 class="trainers__name trainers__name--position">
                     Алексей Лавров
                   </h3>
+                </a>
                 </li>
                 <li class="trainers__item">
+                  <a class="trainers__link" href="#">
                   <div class="trainers__item-wrapper">
                     <h3 class="trainers__name">Александр Пашков</h3>
                     <span class="trainers__course">CrossFit</span>
@@ -1077,8 +1102,10 @@
                   <h3 class="trainers__name trainers__name--position">
                     Александр Пашков
                   </h3>
+                </a>
                 </li>
                 <li class="trainers__item">
+                  <a class="trainers__link" href="#">
                   <div class="trainers__item-wrapper">
                     <h3 class="trainers__name">Мария Кетова</h3>
                     <span class="trainers__course">CrossFit</span>
@@ -1139,15 +1166,16 @@
                   <h3 class="trainers__name trainers__name--position">
                     Мария Кетова
                   </h3>
+                </a>
                 </li>
               </ul>
               <button
                 class="trainers__button trainers__button--hidden trainers__button--left"
-                type="button"
+                type="button" aria-label="arrow left"
               ></button>
               <button
                 class="trainers__button trainers__button--hidden trainers__button--right"
-                type="button"
+                type="button" aria-label="arrow right"
               ></button>
             </div>
           </div>
@@ -1458,12 +1486,12 @@
               </ul>
               <button
                 class="reviews__button reviews__button--left reviews__button--hidden"
-                type="button"
+                type="button" aria-label="arrow left"
               >
               </button>
               <button
                 class="reviews__button reviews__button--right reviews__button--hidden"
-                type="button"
+                type="button" aria-label="arrow right"
               >
               </button>
             </div>
@@ -1532,11 +1560,29 @@
       </main>
       <footer class="footer">
         <div class="footer__container container">
-          <a class="footer__logo" href="#" tabindex="-1">SUPERGYM</a>
+          <a class="footer__logo" href="#" tabindex="-1">
+            <svg class="footer__logo-icon"
+                width="88"
+                height="33"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 123 26"
+              >
+                <use href="img/sprite/sprite.svg#logo"></use>
+              </svg>
+          </a>
           <ul class="footer__list">
             <li class="footer__item footer__item--logo">
               <a class="footer__link footer__link--logo" href="#" tabindex="-1"
-                >SUPERGYM</a
+                >
+                <svg class="footer__logo-icon"
+                width="68"
+                height="15"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 125 25"
+              >
+                <use href="img/sprite/sprite.svg#logo"></use>
+              </svg>
+              </a
               >
             </li>
             <li class="footer__item">

@@ -33,6 +33,8 @@
   padding: 0;
   margin: 0;
   column-count: 2;
+  max-width: 563px;
+  width: 100%;
 
   &::before {
     content: "";
@@ -48,6 +50,10 @@
       top: 7px;
       bottom: 26px;
     }
+  }
+
+  @media (max-width: $vp-1199) {
+    max-width: 100%;
   }
 
   @media (max-width: $vp-767) {
@@ -66,7 +72,7 @@
   display: flex;
   flex-direction: column;
   gap: 6px;
-  padding-left: 60px;
+  padding-left: 65px;
   padding-bottom: 18px;
   break-inside: avoid;
 
@@ -100,6 +106,7 @@
 .contacts__text {
   @include Roboto_Condensed(400, 14px, 21px);
   margin: 0;
+  width: max-content;
 
   @media (max-width: $vp-1199) {
     @include Roboto_Condensed(400, 18px, 27px);

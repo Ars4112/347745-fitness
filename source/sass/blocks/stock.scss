@@ -62,7 +62,7 @@
 
 .stock__banner-card {
   background: #ed0233;
-  padding: 32px 45px 41px;
+  padding: 32px 45px 45px;
   color: #ffffff;
   display: flex;
   flex-direction: column;
@@ -122,7 +122,7 @@
 }
 
 .stock__card-item {
-  padding: 21px 26px;
+  padding: 21px 26px 30px;
   border: 7px solid #87ceeb;
   border-image: linear-gradient(to left top, #00359f, #d10a42);
   border-image-slice: 1;
@@ -157,12 +157,12 @@
 }
 
 .stock__link {
-  @include Roboto_Condensed(400, 14px, 16px);
+  @include Roboto_Condensed(400, 12px, 14px);
   letter-spacing: 0.05em;
   text-transform: uppercase;
   border-bottom: 1px solid #1c3374;
   align-self: start;
-  padding: 5px 0;
+  padding: 2px 0;
 
   &:hover {
     opacity: 0.8;
@@ -185,10 +185,11 @@
 }
 
 .stock__link--banner {
+  @include Roboto_Condensed(400, 14px, 16px);
   border-bottom: 1px solid #ffffff;
   color: #ffffff;
 
-  @media (max-width: $vp-1199) {
+  @media (max-width: $vp-767) {
     @include Roboto_Condensed(400, 14px, 16px);
   }
 }

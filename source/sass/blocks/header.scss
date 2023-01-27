@@ -67,16 +67,20 @@
 }
 
 .header__logo {
-  @include Alumni_Sans(36px, 43px);
-  letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
   color: #ffffff;
+}
 
+.header-icon {
   @media (max-width: $vp-1199) {
-    @include Alumni_Sans(24px, 29px);
+    width: 82px;
+    height: 26px;
   }
 
   @media (max-width: $vp-767) {
-    @include Alumni_Sans(20px, 24px);
+    width: 69px;
+    height: 24px;
   }
 }
 
@@ -209,7 +213,7 @@
 .header__button {
   width: 230px;
   margin-top: 47px;
-  padding: 16px;
+  padding: 19px;
 
   &:hover {
     background-color: #b80027;

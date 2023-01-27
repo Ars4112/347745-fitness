@@ -1,8 +1,9 @@
 .feedback__container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-areas: min-content;
+  // grid-template-areas: min-content;
   padding: 0;
+  max-width: 100%;
 
   @media (max-width: $vp-1199) {
     grid-template-columns: 1fr;

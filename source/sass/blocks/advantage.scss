@@ -55,7 +55,6 @@
 
   @media (max-width: $vp-1199) {
     justify-self: center;
-    padding: 45px 135px;
     max-width: 442px;
     width: 100%;
   }
@@ -137,8 +136,8 @@
 .advantage__decor {
   display: block;
   width: 100%;
-  height: 2px;
-  background-color: #000000;
+  height: 1px;
+  background-color: #d10a4233;
 }
 
 .advantage__list {
@@ -163,7 +162,7 @@
       "center-card center-card"
       "center-card center-card"
       "third-card fourth-card";
-    gap: 43px 34px;
+    gap: 43px 39px;
     padding: 0;
     padding-right: 9px;
   }

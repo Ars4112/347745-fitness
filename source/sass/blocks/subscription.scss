@@ -73,8 +73,9 @@
 
   @media (max-width: $vp-767) {
     @include Roboto_Condensed(400, 16px, 24px);
-    padding: 13px 0;
-    padding-right: 7px;
+    // padding: 13px 0;
+    // padding-right: 7px;
+    padding-bottom: 13px;
   }
 }
 
