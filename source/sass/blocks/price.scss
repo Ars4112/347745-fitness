@@ -29,8 +29,9 @@
   }
 
   @media (max-width: $vp-767) {
-    aspect-ratio: 295/385;
-    padding: 38px 35px;
+    justify-content: space-between;
+    aspect-ratio: 295/390;
+    padding: 45px 35px 47px;
     gap: 22px;
   }
 }
@@ -48,6 +49,7 @@
 
   @media (max-width: $vp-767) {
     @include Roboto_Condensed(700, 22px, 24px);
+    margin-bottom: 8px;
   }
 }
 

@@ -7,7 +7,7 @@
   }
 
   @media (max-width: $vp-767) {
-    padding: 46px 0;
+    padding: 48px 0;
   }
 }
 
@@ -78,7 +78,7 @@
 
   @media (max-width: $vp-767) {
     margin-bottom: 19px;
-    margin-right: 48px;
+    margin-right: 46px;
 
     &:nth-child(3) {
       break-before: avoid;

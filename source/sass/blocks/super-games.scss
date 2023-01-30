@@ -42,7 +42,7 @@
   gap: 29px;
 
   @media (max-width: $vp-1199) {
-    justify-content: end;
+    justify-content: space-between;
     gap: 36px;
   }
 }
@@ -57,6 +57,10 @@
     font-size: 48px;
     line-height: 46px;
     padding: 0;
+  }
+
+  @media (max-width: $vp-767) {
+    padding-left: 4px;
   }
 }
 

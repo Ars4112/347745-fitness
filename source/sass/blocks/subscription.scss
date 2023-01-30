@@ -31,6 +31,10 @@
   @media (max-width: $vp-1199) {
     gap: 40px;
   }
+
+  @media (max-width: $vp-767) {
+    gap: 32px;
+  }
 }
 
 .subscription__period-list {
@@ -96,6 +100,7 @@
   @media (max-width: $vp-767) {
     width: 100%;
     grid-template-columns: 1fr;
+    gap: 36px;
   }
 }
 

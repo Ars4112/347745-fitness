@@ -97,11 +97,11 @@
   @include Roboto_Condensed(400, 16px, 22px);
   margin: 0;
   grid-area: text;
-  max-height: 88px;
-  overflow: auto;
+  // max-height: 88px;
+  // overflow: auto;
 
   @media (max-width: $vp-767) {
-    max-height: 185px;
+    // max-height: 185px;
     text-align: center;
     line-height: 23px;
   }
@@ -144,10 +144,10 @@
 }
 
 .reviews__button--left {
-  left: 41px;
+  left: 46px;
 
   @media (max-width: $vp-1199) {
-    left: 45px;
+    left: 48px;
   }
 
   @media (max-width: $vp-767) {
@@ -156,10 +156,10 @@
 }
 
 .reviews__button--right {
-  right: 41px;
+  right: 46px;
 
   @media (max-width: $vp-1199) {
-    right: 45px;
+    right: 48px;
   }
 
   @media (max-width: $vp-767) {

@@ -252,6 +252,8 @@ const addCarousel = ()=> {
 
       slidesPerView: 1,
 
+      autoHeight: true,
+
       spaceBetween: 30,
 
     });

@@ -47,24 +47,25 @@
     <div class="wrapper">
       <header class="header">
         <div class="header__container container">
+          <div class="header__logo-wrapper">
+          <a class="header__logo" href="#" tabindex="-1">
+            <svg class="header-icon"
+            width="122"
+            height="44"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 123 24"
+          >
+            <use href="img/sprite/sprite.svg#logo"></use>
+          </svg>
+        </a>
           <ul class="header__list">
-            <li class="header__item">
-              <a class="header__logo" href="#" tabindex="-1">
-                <svg class="header-icon"
-                width="122"
-                height="44"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 123 24"
-              >
-                <use href="img/sprite/sprite.svg#logo"></use>
-              </svg></a>
-            </li>
             <li class="header__item">
               <a class="header__phone-link" href="tel:8-800-555-55-55"
                 >8-800-555-55-55</a
               >
             </li>
           </ul>
+        </div>
           <div class="header__wrapper">
             <div class="header__inner-wrapper">
               <p class="header__sup-text">омск</p>
@@ -657,7 +658,7 @@
             <div class="trainers__wrapper">
               <ul class="trainers__list trainers__list--display">
                 <li class="trainers__item">
-                  <a class="trainers__link" href="#">
+                  <button class="trainers__link">
                   <div class="trainers__item-wrapper">
                     <h3 class="trainers__name">Анна Павлова</h3>
                     <span class="trainers__course">CrossFit</span>
@@ -718,7 +719,7 @@
                   <h3 class="trainers__name trainers__name--position">
                     Анна Павлова
                   </h3>
-                </a>
+                  </button>
                 </li>
                 <li class="trainers__item">
                   <a class="trainers__link" href="#">

@@ -1548,7 +1548,7 @@ h2 {
 }
 
 ::-webkit-scrollbar {
-  width: 5px;
+  width: 3px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -1855,11 +1855,7 @@ h2 {
   color: #ffffff;
 }
 
-.header__list {
-  position: relative;
-  z-index: 1;
-  list-style: none;
-  margin: 0;
+.header__logo-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1869,8 +1865,27 @@ h2 {
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: start;
-  gap: 20px;
+  gap: 40px;
   padding: 30px 0 25px;
+}
+
+.header__list {
+  position: relative;
+  z-index: 1;
+  list-style: none;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: end;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: start;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 20px 45px;
 }
 
 .header__item {
@@ -1892,6 +1907,7 @@ h2 {
   -ms-flex-align: center;
   align-items: center;
   color: #ffffff;
+  cursor: default;
 }
 
 .header__phone-link {
@@ -2650,8 +2666,6 @@ h2 {
   line-height: 22px;
   margin: 0;
   grid-area: text;
-  max-height: 88px;
-  overflow: auto;
 }
 
 .reviews__image {
@@ -2692,11 +2706,11 @@ h2 {
 }
 
 .reviews__button--left {
-  left: 41px;
+  left: 46px;
 }
 
 .reviews__button--right {
-  right: 41px;
+  right: 46px;
 }
 
 .stock__container {
@@ -2830,7 +2844,7 @@ h2 {
 .stock__link {
   font-family: "Roboto-Condensed", "Arial", sans-serif;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.05em;
@@ -2840,6 +2854,7 @@ h2 {
   -ms-grid-row-align: start;
   align-self: start;
   padding: 2px 0;
+  margin-top: 10px;
 }
 
 .stock__link:hover {
@@ -2853,7 +2868,7 @@ h2 {
 .stock__link--banner {
   font-family: "Roboto-Condensed", "Arial", sans-serif;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 14px;
   line-height: 16px;
   border-bottom: 1px solid #ffffff;
@@ -2939,6 +2954,7 @@ h2 {
   align-items: center;
   width: 100%;
   height: 100%;
+  border: none;
 }
 
 .trainers__link:focus .trainers__name--position {
@@ -2960,7 +2976,7 @@ h2 {
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
-  line-height: 27px;
+  line-height: 23px;
   margin: 0;
 }
 
@@ -2999,9 +3015,8 @@ h2 {
   -ms-flex-direction: column;
   flex-direction: column;
   gap: 12px;
-  max-width: 160px;
+  max-width: 163px;
   height: auto;
-  max-height: 115px;
   overflow-y: auto;
 }
 
@@ -3486,7 +3501,7 @@ form input:hover {
     padding-bottom: 65px;
   }
 
-  .header__list {
+  .header__logo-wrapper {
     padding-top: 36px;
     padding-bottom: 17px;
   }
@@ -3605,9 +3620,9 @@ form input:hover {
   }
 
   .super-games__info {
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: end;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     gap: 36px;
   }
 
@@ -3803,11 +3818,11 @@ form input:hover {
   }
 
   .reviews__button--left {
-    left: 45px;
+    left: 48px;
   }
 
   .reviews__button--right {
-    right: 45px;
+    right: 48px;
   }
 
   .stock__container {
@@ -3853,7 +3868,7 @@ form input:hover {
   .stock__link {
     font-family: "Roboto-Condensed", "Arial", sans-serif;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 12px;
     line-height: 14px;
     padding: 0;
@@ -3979,7 +3994,7 @@ form input:hover {
   }
 
   .footer {
-    padding: 46px 0;
+    padding: 48px 0;
   }
 
   .footer__container {
@@ -4008,7 +4023,7 @@ form input:hover {
 
   .footer__item {
     margin-bottom: 19px;
-    margin-right: 48px;
+    margin-right: 46px;
   }
 
   .footer__item:nth-child(3) {
@@ -4101,7 +4116,7 @@ form input:hover {
     padding-bottom: 39px;
   }
 
-  .header__list {
+  .header__logo-wrapper {
     padding-top: 15px;
   }
 
@@ -4171,6 +4186,10 @@ form input:hover {
     gap: 5px;
   }
 
+  .subscription__wrapper {
+    gap: 32px;
+  }
+
   .subscription__period-list {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
@@ -4193,6 +4212,7 @@ form input:hover {
     width: 100%;
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+    gap: 36px;
   }
 
   .subscription__image {
@@ -4200,8 +4220,11 @@ form input:hover {
   }
 
   .price__item {
-    aspect-ratio: 295/385;
-    padding: 38px 35px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    aspect-ratio: 295/390;
+    padding: 45px 35px 47px;
     gap: 22px;
   }
 
@@ -4211,6 +4234,7 @@ form input:hover {
     font-weight: 700;
     font-size: 22px;
     line-height: 24px;
+    margin-bottom: 8px;
   }
 
   .price__number-shadow {
@@ -4248,6 +4272,10 @@ form input:hover {
 
   .super-games__wrapper {
     gap: 4px;
+  }
+
+  .super-games__title {
+    padding-left: 4px;
   }
 
   .super-games__image {
@@ -4373,7 +4401,6 @@ form input:hover {
   }
 
   .reviews__text {
-    max-height: 185px;
     text-align: center;
     line-height: 23px;
   }
@@ -4411,7 +4438,7 @@ form input:hover {
 
   .stock__container {
     padding-top: 65px;
-    padding-bottom: 33px;
+    padding-bottom: 35px;
   }
 
   .stock__wrapper {
@@ -4452,7 +4479,7 @@ form input:hover {
   .stock__link--banner {
     font-family: "Roboto-Condensed", "Arial", sans-serif;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 14px;
     line-height: 16px;
   }
@@ -4484,7 +4511,7 @@ form input:hover {
   }
 
   .trainers__button {
-    top: 63%;
+    top: 59%;
     width: 10px;
     height: 18px;
   }
@@ -4532,7 +4559,7 @@ form input:hover {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    gap: 19px;
+    gap: 18px;
   }
 
   .contacts__list::before {
