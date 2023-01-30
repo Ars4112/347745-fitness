@@ -66,9 +66,6 @@
   align-items: start;
   flex-wrap: wrap;
   gap: 20px 45px;
-
-
-
 }
 
 .header__item {
@@ -176,6 +173,12 @@
 .header__text-wrapper {
   display: grid;
   grid-template-columns: 113px min-content;
+  // grid-auto-rows: auto;
+  grid-template-rows: minmax(200px, auto) auto;
+  grid-template-areas:
+    "text title"
+    "text button";
+  align-items: start;
   gap: 19px;
 
   @media (max-width: $vp-1199) {
@@ -183,18 +186,25 @@
   }
 
   @media (max-width: $vp-767) {
+    grid-template-areas:
+    "text title"
+    "button button";
     gap: 0;
+    width: 100%;
   }
 }
 
 .header__sub-text {
   @include Roboto_Condensed(400, 14px, 21px);
-  margin: auto 0 33px;
-
+  // margin: auto 0 33px;
+  margin-top: 134px;
+grid-area: text;
+align-self: start;
   text-align: right;
 
   @media (max-width: $vp-1199) {
     margin-bottom: 19px;
+    margin-top: 97px;
   }
 
   @media (max-width: $vp-767) {
@@ -203,8 +213,15 @@
   }
 }
 
+// .header__title-wrapper {
+// display: flex;
+// flex-direction: column;
+
+// }
+
 .header__title {
   @include Alumni_Sans(92px, 110px);
+  grid-area: title;
   margin: 14px 0 0;
   text-align: right;
   letter-spacing: 0.05em;
@@ -218,13 +235,15 @@
 
   @media (max-width: $vp-767) {
     margin-top: 13px;
-    margin-left: -11px;
+    margin-left: -8px;
   }
 }
 
 .header__button {
+  grid-area: button;
   width: 230px;
-  margin-top: 47px;
+  margin-top: 29px;
+  margin-left: 13px;
   padding: 19px;
 
   &:hover {
@@ -238,12 +257,14 @@
   @media (max-width: $vp-1199) {
     padding: 19px;
     width: 187px;
-    margin-top: 38px;
+    margin-top: 13px;
+    margin-left: 2px;
   }
 
   @media (max-width: $vp-767) {
     width: 100%;
     margin-top: 23px;
+    margin-left: 0;
   }
 }
 

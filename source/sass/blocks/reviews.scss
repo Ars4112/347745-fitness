@@ -59,7 +59,7 @@
     "avatar text"
     "avatar text"
     "avatar text";
-  gap: 12px 24px;
+  gap: 12px 29px;
 
   @media (max-width: $vp-1199) {
     padding: 56px 65px;
@@ -147,11 +147,11 @@
   left: 46px;
 
   @media (max-width: $vp-1199) {
-    left: 48px;
+    left: 44px;
   }
 
   @media (max-width: $vp-767) {
-    left: 19px;
+    left: 12px;
   }
 }
 
@@ -159,10 +159,10 @@
   right: 46px;
 
   @media (max-width: $vp-1199) {
-    right: 48px;
+    right: 44px;
   }
 
   @media (max-width: $vp-767) {
-    right: 19px;
+    right: 12px;
   }
 }

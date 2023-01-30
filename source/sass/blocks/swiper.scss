@@ -12,22 +12,18 @@
   width: 100%;
 }
 
-.swiper-button-next {
-  width: 16px;
-  height: 32px;
+.swiper-button-next::after {
+  font-size: 30px;
 
   @media (max-width: $vp-767) {
-    width: 10px;
-    height: 18px;
+    font-size: 20px;
   }
 }
 
-.swiper-button-prev {
-  width: 16px;
-  height: 32px;
+.swiper-button-prev::after {
+  font-size: 30px;
 
   @media (max-width: $vp-767) {
-    width: 10px;
-    height: 18px;
+    font-size: 20px;
   }
 }
