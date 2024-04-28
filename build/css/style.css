@@ -2116,6 +2116,9 @@ h2 {
   display: none;
   -ms-grid-columns: (minmax(200px, 360px))[3];
   grid-template-columns: repeat(3, minmax(200px, 360px));
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   gap: 40px;
 }
 
@@ -4262,8 +4265,8 @@ form input:hover {
 
   .subscription__price-list {
     width: 100%;
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
+    -ms-grid-columns: minmax(250px, 500px);
+    grid-template-columns: minmax(250px, 500px);
     gap: 36px;
   }
 

@@ -1,7 +1,6 @@
 
 import './vendor/swiper';
 import Swiper, {Navigation, Pagination} from 'swiper';
-// import 'swiper/css/bundle';
 
 
 const subscriptionButton = document.querySelectorAll('.subscription__button');

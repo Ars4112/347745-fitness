@@ -91,6 +91,7 @@
   padding: 0;
   display: none;
   grid-template-columns: repeat(3, minmax(200px, 360px));
+  justify-content: center;
   gap: 40px;
 
   @media (max-width: $vp-1199) {
@@ -99,7 +100,7 @@
 
   @media (max-width: $vp-767) {
     width: 100%;
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(250px, 500px);
     gap: 36px;
   }
 }
